@@ -1,0 +1,233 @@
+.header-topwrap {
+  border-bottom: 1px solid $header-border;
+}
+
+.header-top {
+  @include center();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+
+  &__social {
+    flex: 0 0 80%;
+    border-right: 1px solid $header-border;
+    padding: 1rem 0;
+
+    &-list {
+
+      &-item {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0 2rem;
+        &:hover {
+          background-color: $logo-color;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  &__lang {
+    flex: 0 0 11%;
+    cursor: pointer;
+    position: relative;
+    border-right: 1px solid $header-border;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+
+    &-country {
+      margin-left: -1.5rem;
+      &-item {
+
+        &:hover {
+          color: $logo-color;
+        }
+      }
+
+    }
+  }
+  &__money {
+    flex: 0 0 10%;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+
+    &-money {
+      padding: 0 2rem;
+      &:hover {
+        color: $logo-color;
+      }
+
+    }
+  }
+}
+
+.header-bottom {
+  @include center();
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__logo {
+    width: 50%;
+  }
+  &__call {
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    color: $header-border;
+    cursor: pointer;
+    &:hover {
+      fill: $logo-color;
+
+    }
+    &-text {
+      font-size: 1.2rem;
+
+      span {
+        color: $dark-color1;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__nav {
+
+    &-list {
+      padding: 2rem 2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    &-item {
+      display: inline-block;
+      padding: 0rem 1.5rem;
+
+      &:not(:last-child) {
+        border-right: 1px solid $header-border;
+      }
+
+    }
+    &-link,
+    :visited,
+    :active {
+      text-decoration: none;
+      color: $social-header;
+      &:hover {
+        color: $logo-color;
+      }
+
+    }
+  }
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.searchwrap {
+  background-color: $logo-text;
+}
+
+.search-barwrap {
+  display: flex;
+  padding: 1rem 0 0 0;
+  @include center();
+
+  &__nav {
+    background-color: $logo-color;
+    flex: 0 0 20%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.77rem 1.3rem;
+    margin-top: -1rem;
+  }
+  &__item {
+
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+  &__input {
+    flex: 0 0 60%;
+    position: relative;
+    margin: 0 auto;
+    &-input {
+      width: 100%;
+      border: none;
+      background-color: $header-background;
+      border-radius: 5px;
+      outline: none;
+      padding: 1.1rem 0;
+      &::-webkit-input-placeholder {
+        color: $header-border;
+        padding: 3rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 6.5%;
+    right: 1%;
+    background-color: #ff5f2b;
+    border: none;
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark-color1;
+    }
+  }
+  &__reg-shop {
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    fill: #fff;
+    color: #fff;
+    position: relative;
+    margin-top: -1rem;
+
+    &--reg {
+      &:hover {
+        fill: $logo-color;
+      }
+    }
+    &--shop {
+      &:hover {
+        fill: $logo-color;
+      }
+    }
+  }
+  .cost {
+    position: absolute;
+    top: 29%;
+    right: 17%;
+  }
+  .item-shop {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    background-color: #ff5f2b;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
