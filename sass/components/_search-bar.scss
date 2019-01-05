@@ -1,21 +1,59 @@
-.burger{
-  border-bottom: 2px solid $header-background;
-  display: block;
-  width: 15px;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  &::before {
-    content: "";
-    display: block;
-    border-bottom: 2px solid $header-background;
-    width: 15px;
-    margin-bottom: .3rem;
+.burger {
+   border-bottom: 2px solid $header-background;
+   display: block;
+   width: 15px;
+   margin-left: 2rem;
+   margin-top: .7rem;
+  transition: all 1s ease;
+
+   &::before {
+     content: "";
+     display: block;
+     border-bottom: 2px solid $header-background;
+     width: 15px;
+     margin-bottom: .3rem;
+
+   }
+   &::after {
+     content: "";
+     display: block;
+     border-bottom: 2px solid $header-background;
+     width: 15px;
+     margin-bottom: .3rem;
+   }
+  .rotate{
+    transform: rotate(180deg);
   }
-  &::after{
-    content: "";
-    display: block;
-    border-bottom: 2px solid $header-background;
-    width: 15px;
-    margin-bottom: .3rem;
+ }
+
+.side-menu{
+  position: absolute;
+  top: 97%;
+  width: 24%;
+  text-align: left;
+  z-index: 1;
+
+
+  &__item{
+    padding: 1.5rem 1rem;
+    position: relative;
+    &:not(:last-child){
+      border-bottom: 1px dotted $header-border;
+    }
   }
+  &__link,
+  &:active,
+  &:visited{
+    text-decoration: none;
+    color: $dark-color1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    &:hover{
+      color: $logo-color;
+      fill: $logo-color;
+    }
+
+  }
+
+
 }

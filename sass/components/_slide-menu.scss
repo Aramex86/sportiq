@@ -1,0 +1,117 @@
+.slide-menuwrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.slide-menu {
+  width: 54rem;
+  background-color: $header-background;
+  z-index: 1;
+  right: 68%;
+  top: 73%;
+  position: absolute;
+  padding: 1rem 2rem;
+  box-shadow:  0 1rem 2rem rgba(0,0,0, .50) ;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+  &__img{
+    width: 100%;
+    background-image: url(/img/banner-ball.jpg);
+    background-size: cover;
+    padding: 8rem 3rem;
+    &-link{
+      text-decoration: none;
+      span{
+        color: #fff;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        display: block;
+        width: 60%;
+      }
+    }
+  }
+}
+.menu1 {
+  &__list {
+
+  }
+  &__item {
+padding: .5rem 0;
+  }
+  &__link {
+    text-decoration: none;
+
+    h1 {
+      font-size: 1.6rem;
+      color: $dark-color1;
+      &:hover{
+        color: $logo-color;
+      }
+    }
+  }
+}
+.menu2 {
+  &__list {
+
+  }
+  &__item {
+padding: .5rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 1.3rem;
+
+    h1 {
+      font-size: 1.6rem;
+      color: $dark-color1;
+      &:hover{
+        color: $logo-color;
+      }
+    }
+  }
+}
+.menu3 {
+  &__list {
+
+  }
+  &__item {
+padding: .5rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    h1 {
+      font-size: 1.6rem;
+      color: $dark-color1;
+      &:hover{
+        color: $logo-color;
+      }
+    }
+  }
+}
+.menu4{
+  position: absolute;
+  top: 83%;
+  left: 14%;
+  z-index: 1;
+  background-color: #fff;
+  width: 33%;
+  box-shadow:  0 1rem 2rem rgba(0,0,0, .50);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+  &__list{
+
+  }
+  &__item{
+    padding: 1rem 2rem;
+
+  }
+  &__link{
+    text-decoration: none;
+    color: $menu-color;
+
+  }
+}

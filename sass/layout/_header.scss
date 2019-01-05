@@ -97,7 +97,7 @@
     }
   }
   &__nav {
-
+    position: relative;
     &-list {
       padding: 2rem 2rem;
       font-size: 1.4rem;
@@ -110,6 +110,16 @@
       &:not(:last-child) {
         border-right: 1px solid $header-border;
       }
+      &:hover .slide-menu{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(1%);
+      }
+      &:hover .menu4{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(1%);
+      }
 
     }
     &-link,
@@ -117,14 +127,12 @@
     :active {
       text-decoration: none;
       color: $social-header;
-      &:hover {
+      &:hover{
         color: $logo-color;
       }
-
+      }
     }
   }
-}
-
 .right-side {
   width: 50%;
   display: flex;
@@ -139,11 +147,12 @@
 .search-barwrap {
   display: flex;
   padding: 1rem 0 0 0;
+  position: relative;
   @include center();
 
   &__nav {
     background-color: $logo-color;
-    flex: 0 0 20%;
+    flex: 0 0 22%;
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
@@ -152,7 +161,9 @@
     justify-content: center;
     padding: 1.77rem 1.3rem;
     margin-top: -1rem;
+    position: relative;
   }
+
   &__item {
 
   }
