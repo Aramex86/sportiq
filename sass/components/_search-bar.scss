@@ -40,6 +40,17 @@
     &:not(:last-child){
       border-bottom: 1px dotted $header-border;
     }
+    &:hover .slide1-menu{
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(1%);
+    }
+    &:hover .menu5{
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(1%);
+    }
+
   }
   &__link,
   &:active,

@@ -48,6 +48,14 @@ body {
     position: relative; }
     .side-menu__item:not(:last-child) {
       border-bottom: 1px dotted rgba(128, 128, 128, 0.35); }
+    .side-menu__item:hover .slide1-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(1%); }
+    .side-menu__item:hover .menu5 {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(1%); }
   .side-menu__link, .side-menu:active, .side-menu:visited {
     text-decoration: none;
     color: #343748;
@@ -117,6 +125,33 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.slide1-menu {
+  width: 59rem;
+  background-color: #fff;
+  z-index: 1;
+  left: 101%;
+  top: 6%;
+  position: absolute;
+  padding: 1rem 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease; }
+  .slide1-menu__img {
+    width: 100%;
+    background-image: url(/img/banner-ball.jpg);
+    background-size: cover;
+    padding: 4rem 2rem;
+    background-position-y: 46%; }
+    .slide1-menu__img-link {
+      text-decoration: none; }
+      .slide1-menu__img-link span {
+        color: #fff;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        display: block;
+        width: 60%; }
+
 .slide-menu {
   width: 54rem;
   background-color: #fff;
@@ -147,7 +182,10 @@ body {
   padding: .5rem 0; }
 
 .menu1__link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #343748; }
+  .menu1__link:hover {
+    color: #ff5f2b; }
   .menu1__link h1 {
     font-size: 1.6rem;
     color: #343748; }
@@ -159,7 +197,9 @@ body {
 
 .menu2__link {
   text-decoration: none;
-  font-size: 1.3rem; }
+  color: #343748; }
+  .menu2__link:hover {
+    color: #ff5f2b; }
   .menu2__link h1 {
     font-size: 1.6rem;
     color: #343748; }
@@ -170,11 +210,33 @@ body {
   padding: .5rem 0; }
 
 .menu3__link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #343748; }
+  .menu3__link:hover {
+    color: #ff5f2b; }
   .menu3__link h1 {
     font-size: 1.6rem;
     color: #343748; }
     .menu3__link h1:hover {
+      color: #ff5f2b; }
+
+.menu5 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  z-index: 1;
+  background-color: #fff;
+  width: 59%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease; }
+  .menu5__item {
+    padding: 1rem 2rem; }
+  .menu5__link {
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.51); }
+    .menu5__link:hover {
       color: #ff5f2b; }
 
 .menu4 {
@@ -193,6 +255,8 @@ body {
   .menu4__link {
     text-decoration: none;
     color: rgba(128, 128, 128, 0.51); }
+    .menu4__link:hover {
+      color: #ff5f2b; }
 
 .header-topwrap {
   border-bottom: 1px solid rgba(128, 128, 128, 0.35); }
@@ -253,16 +317,17 @@ body {
   .header-bottom__call {
     margin-right: 3rem;
     font-size: 1.4rem;
-    color: rgba(128, 128, 128, 0.35);
     cursor: pointer; }
     .header-bottom__call:hover {
       fill: #ff5f2b; }
     .header-bottom__call-text {
-      font-size: 1.2rem; }
+      font-size: 1.3rem;
+      color: rgba(128, 128, 128, 0.84);
+      letter-spacing: 1px; }
       .header-bottom__call-text span {
         color: #343748;
         font-weight: 600;
-        font-size: 1.5rem; }
+        font-size: 1.4rem; }
   .header-bottom__nav {
     position: relative; }
     .header-bottom__nav-list {
