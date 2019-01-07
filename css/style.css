@@ -139,7 +139,7 @@ body {
   transition: all .2s ease; }
   .slide1-menu__img {
     width: 100%;
-    background-image: url(/img/banner-ball.jpg);
+    background-image: url(../img/banner-ball.jpg);
     background-size: cover;
     padding: 4rem 2rem;
     background-position-y: 46%; }
@@ -166,7 +166,7 @@ body {
   transition: all .2s ease; }
   .slide-menu__img {
     width: 100%;
-    background-image: url(/img/banner-ball.jpg);
+    background-image: url(../img/banner-ball.jpg);
     background-size: cover;
     padding: 8rem 3rem; }
     .slide-menu__img-link {
