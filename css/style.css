@@ -222,7 +222,7 @@ body {
 
 .menu5 {
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 100%;
   z-index: 1;
   background-color: #fff;
@@ -336,7 +336,7 @@ body {
       font-weight: 500; }
     .header-bottom__nav-item {
       display: inline-block;
-      padding: 0rem 1.5rem; }
+      padding: 0 1.5rem; }
       .header-bottom__nav-item:not(:last-child) {
         border-right: 1px solid rgba(128, 128, 128, 0.35); }
       .header-bottom__nav-item:hover .slide-menu {
