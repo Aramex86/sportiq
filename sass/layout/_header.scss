@@ -144,6 +144,8 @@
 
 .searchwrap {
   background-color: $logo-text;
+  position: relative;
+  z-index: 1;
 }
 
 .search-barwrap {

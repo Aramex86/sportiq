@@ -29,9 +29,10 @@
 .side-menu{
   position: absolute;
   top: 97%;
-  width: 24%;
+  width: 22%;
   text-align: left;
   z-index: 1;
+  background-color: $header-background;
 
 
   &__item{

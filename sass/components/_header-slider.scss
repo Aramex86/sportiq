@@ -1,0 +1,129 @@
+.header-slider {
+  &:hover .bx-controls-direction{
+    opacity: 1;
+    transition: all .2s ease;
+  }
+}
+
+.slider {
+  &__slide1 {
+    text-align: center;
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $dark-color1 30%, transparent),
+    url("../img/slide1.jpg");
+    background-size: cover;
+    padding: 31.5rem 0;
+    z-index: -1;
+    position: relative;
+    width: 169rem !important;
+    &--text {
+      position: absolute;
+      top: 33%;
+      left: 8%;
+      color: $header-background;
+    }
+    &--item1 {
+      font-size: 2rem;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    &--item2 {
+      font-size: 4rem;
+      letter-spacing: 3px;
+      font-weight: 100;
+      &--bold {
+        font-weight: 600;
+      }
+    }
+    &--item3 {
+      font-size: 4rem;
+      font-weight: 600;
+      color: $logo-color;
+    }
+  }
+  &__slide2 {
+    text-align: center;
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $dark-color1 30%, transparent),
+    url("../img/slide2.jpg");
+    background-size: cover;
+    background-position: 0 74%;
+    padding: 31.5rem 0;
+    z-index: -1;
+    position: relative;
+    width: 169rem !important;
+  }
+  &__slide3 {
+    text-align: center;
+    font-size: 3.5rem;
+    background-image: linear-gradient(to left, #343748 18%, transparent), url(../img/slide3.jpg);
+    background-size: cover;
+    background-position: 0 37%;
+    padding: 31.5rem 0;
+    z-index: -1;
+    position: relative;
+    width: 169rem !important;
+    &--text {
+      position: absolute;
+      top: 33%;
+      right: 12%;
+      color: $header-background;
+    }
+  }
+
+}
+
+///////Slider Controls
+.bx-viewport {
+  height: auto !important;
+}
+.bx-wrapper{
+  margin-bottom: 0 ;
+}
+
+
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 26px;
+  height: 38px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.bx-wrapper .bx-prev {
+  left: 25px;
+  width: 10rem;
+  height: 10rem;
+  background-color: $logo-color;
+  background-image: none;
+  -webkit-clip-path: polygon(0 48%, 100% 0, 100% 100%);
+  clip-path: polygon(0 48%, 100% 0, 100% 100%);
+  &:hover {
+    background-color: $header-background;
+  }
+}
+
+.bx-wrapper .bx-next {
+  right: 25px;
+  width: 10rem;
+  height: 10rem;
+  background-color: $logo-color;
+  background-image: none;
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  &:hover {
+    background-color: $header-background;
+  }
+}
+.bx-controls-direction{
+  opacity: 0;
+}
+
+
+

@@ -37,7 +37,7 @@
 .slide-menu {
   width: 54rem;
   background-color: $header-background;
-  z-index: 1;
+  z-index: 2;
   right: 68%;
   top: 73%;
   position: absolute;
@@ -74,7 +74,7 @@
   &__link {
     text-decoration: none;
     color: $dark-color1;
-    &:hover{
+    &:hover {
       color: $logo-color;
     }
 
@@ -98,7 +98,7 @@
   &__link {
     text-decoration: none;
     color: $dark-color1;
-    &:hover{
+    &:hover {
       color: $logo-color;
     }
 
@@ -122,7 +122,7 @@
   &__link {
     text-decoration: none;
     color: $dark-color1;
-    &:hover{
+    &:hover {
       color: $logo-color;
     }
     h1 {
@@ -134,7 +134,8 @@
     }
   }
 }
-.menu5{
+
+.menu5 {
   position: absolute;
   top: 0;
   left: 100%;
@@ -155,17 +156,18 @@
   &__link {
     text-decoration: none;
     color: $menu-color;
-    &:hover{
+    &:hover {
       color: $logo-color;
     }
 
   }
 }
+
 .menu4 {
   position: absolute;
   top: 83%;
   left: 14%;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   width: 33%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .50);
@@ -182,7 +184,7 @@
   &__link {
     text-decoration: none;
     color: $menu-color;
-    &:hover{
+    &:hover {
       color: $logo-color;
     }
 
