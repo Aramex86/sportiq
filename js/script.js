@@ -8,7 +8,8 @@ $(document).ready(function () {
         maxslide:1,
         minslide:1,
         moveslide:1,
-        auto:true
+        auto:true,
+        autoHover:true
     });
     $(".bx-wrapper").css("border","none");
 

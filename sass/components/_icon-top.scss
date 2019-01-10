@@ -64,6 +64,13 @@
   right: 8%;
   top: 38%;
   transform: rotate(269deg);
+}
+.suport__item--icon{
+  width: 4rem;
+  height: 4rem;
+  fill: $header-background;
+  position: relative;
+  z-index: 1;
 
 }
 

@@ -1,0 +1,87 @@
+.suport {
+  background-color: $dark-color1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    color: $header-background;
+    text-align: center;
+    padding: 1.5rem 7rem;
+    position: relative;
+
+    &:not(:last-child) {
+      border-right: 1px solid $header-border;
+    }
+    &--link {
+      text-decoration: none;
+      color: $header-background;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: $logo-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width .6s;
+  }
+  &__item:hover::before{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $logo-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &__item::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 100%;
+      background-color: $logo-color;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  &__item:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $logo-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .6s;
+  }
+
+  .top-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    z-index: 1;
+    position: relative;
+
+  }
+  .bottom-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(128, 128, 128, 0.51);
+    margin-top: 1rem;
+    z-index: 1;
+    position: relative;
+  }
+  &__item:hover .bottom-text{
+    color: $social-header;
+    font-weight:600;
+  }
+
+
+}
