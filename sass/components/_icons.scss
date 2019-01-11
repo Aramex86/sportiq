@@ -71,6 +71,29 @@
   fill: $header-background;
   position: relative;
   z-index: 1;
+}
+.item__wraptop-icon{
+  width: 2rem;
+  height: 2rem;
+  fill: $logo-color;
 
+}
+.price-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill:$dark-color1;
+  position: absolute;
+  bottom: .4rem;
+  left: -16px;
+  font-weight: 600;
+}
+.oldprice-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: $menu-color;
+  position: absolute;
+  bottom: .4rem;
+  left: 25%;
+  font-weight: 600;
 }
 

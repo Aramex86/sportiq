@@ -7,6 +7,8 @@
     background-color: $button-color;
     padding: 1rem 2rem;
     border-radius: 5px;
+    z-index: 1;
+    position: relative;
     &:hover{
       background-color: $logo-color;
     }

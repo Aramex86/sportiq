@@ -4,15 +4,22 @@
 @import "base/base";
 
 
-
+@import "components/item-bnt";
+@import "components/btn-shop";
 @import "components/suport";
 @import "components/banner-btn";
 @import "components/header-slider";
-@import "components/icon-top";
 @import "components/slide-menu";
 @import "components/search-bar";
 @import "components/features";
 @import "components/section-item";
+@import "components/icons";
+
+
+
+
+
+
 
 
 
@@ -33,4 +40,4 @@
 
 
 @import "layout/header";
-@import "layout/main";
+@import "layout/main-page";
