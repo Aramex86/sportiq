@@ -42,11 +42,13 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap:wrap;
+  position: relative;
  &--item{
    position: relative;
    width: 23%;
    text-align: center;
    margin-bottom: 5%;
+
 
 
  }
@@ -85,14 +87,24 @@
       color: $menu-color;
       text-decoration-line: line-through;
     }
-
-
+  }
+  &--sale{
+    background-color: rgba(40, 42, 55, 0.9);
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    width: 17%;
+    border-radius: 10px;
+    font-size: 1.1rem;
   }
 }
-.price,.old-price{
+.price{
   color: $social-header;
   margin-right: 15%;
-
+}
+.old-price{
+  margin-right: 1%;
 }
 
 

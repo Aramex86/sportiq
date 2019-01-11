@@ -1,3 +1,24 @@
-.btn__shop{
-  background-color: #449fdb;
+.btn__buy{
+  position: absolute;
+
+
+
+
+  &--btn{
+    border: none;
+    background-color: rgba(40, 42, 55, 0.9);
+    color: $header-background;
+    width: 14rem;
+    height: 4rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 31px;
+    outline: none;
+    &:hover{
+      background-color: $logo-color;
+    }
+
+
+  }
 }

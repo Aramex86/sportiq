@@ -93,7 +93,14 @@
   fill: $menu-color;
   position: absolute;
   bottom: .4rem;
-  left: 25%;
+  left: 34%;
   font-weight: 600;
 }
-
+.shop-icon{
+  width: 2rem;
+  height: 2rem;
+  fill: $header-background;
+  position: relative;
+  top: 4px;
+  left: -7px;
+}
