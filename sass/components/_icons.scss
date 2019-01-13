@@ -72,7 +72,7 @@
   position: relative;
   z-index: 1;
 }
-.item__wraptop-icon{
+.item__wraptop1-icon{
   width: 2rem;
   height: 2rem;
   fill: $logo-color;
@@ -84,7 +84,7 @@
   fill:$dark-color1;
   position: absolute;
   bottom: .4rem;
-  left: -16px;
+  left:0;
   font-weight: 600;
 }
 .oldprice-icon{
@@ -93,7 +93,7 @@
   fill: $menu-color;
   position: absolute;
   bottom: .4rem;
-  left: 34%;
+  left: 20%;
   font-weight: 600;
 }
 .shop-icon{

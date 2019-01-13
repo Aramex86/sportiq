@@ -630,19 +630,24 @@ body {
   .section-item__header--item {
     display: inline-block;
     padding: 0rem 2.5rem;
-    position: relative; }
+    position: relative;
+    color: rgba(197, 200, 214, 0.29);
+    cursor: pointer; }
+    .section-item__header--item:hover {
+      color: #ff5f2b; }
+    .section-item__header--item:hover::before {
+      transform: translateY(-40%);
+      transition: all .3s ease; }
     .section-item__header--item:not(:last-child) {
       border-right: 1px solid rgba(128, 128, 128, 0.35); }
   .section-item__header--link {
     color: #828592;
     text-decoration: none; }
-    .section-item__header--link:hover {
-      color: #ff5f2b; }
   .section-item__header--item::before {
     content: "";
     display: block;
     position: absolute;
-    bottom: -42%;
+    bottom: -66%;
     left: 43%;
     height: 58%;
     width: 9%;
@@ -650,59 +655,78 @@ body {
     -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     clip-path: polygon(51% 53%, 96% 100%, 5% 100%); }
 
-.item__wraptop {
+.item__wraptop1 {
   padding: 5rem 3rem;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  position: relative; }
-  .item__wraptop--item {
-    position: relative;
-    width: 23%;
-    text-align: center;
-    margin-bottom: 5%; }
-  .item__wraptop--link {
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end;
+  /*
+///Item-Slider
+.item-slidrerwrap{
+
+    height: auto;
+  position: relative;
+  &--list{
+    outline: 1px solid orangered;
+  }
+  &--item{
+
+  }
+  &--link{
     text-decoration: none;
-    color: rgba(128, 128, 128, 0.51); }
-    .item__wraptop--link:hover {
+  }
+  &--img{
+    width: 23%;
+    background-color: $item-header-color1;
+    padding: 2rem;
+  }
+
+*/ }
+  .item__wraptop1--list {
+    display: inline-flex;
+    justify-content: space-between; }
+  .item__wraptop1--item {
+    display: inline-flex;
+    position: relative;
+    width: 24%; }
+    .item__wraptop1--item:hover .item__wraptop1-icon {
+      transform: translateY(-2.7rem);
+      opacity: 0;
+      transition: all 1s; }
+    .item__wraptop1--item:hover .product-name {
+      transform: translateY(-2.6rem);
+      transition: all 1s;
       color: #ff5f2b; }
-  .item__wraptop--img {
-    margin-bottom: 8.5rem;
+    .item__wraptop1--item:hover .item__wraptop1--pricewrap {
+      transform: translateY(-2.6rem);
+      transition: all 1s; }
+    .item__wraptop1--item:hover .btn__buy {
+      opacity: 1;
+      transform: translateY(-2.3rem);
+      transition: all 1s; }
+    .item__wraptop1--item:nth-child(5) {
+      display: none; }
+  .item__wraptop1--link {
+    text-decoration: none;
+    color: #343748;
+    font-weight: 500; }
+  .item__wraptop1--img {
     width: 100%;
     background-color: rgba(197, 200, 214, 0.29);
     padding: 2rem; }
-  .item__wraptop--starwrap {
-    position: absolute;
-    left: 0;
-    top: 76%; }
-    .item__wraptop--starwrap p:nth-of-type(1) {
-      margin-right: -20px; }
-  .item__wraptop--pricewrap {
-    display: flex;
-    position: absolute;
-    width: 53%;
-    bottom: 3%;
-    left: 7%;
-    font-weight: 600; }
-    .item__wraptop--pricewrap span:nth-of-type(2) {
-      color: rgba(128, 128, 128, 0.51);
-      text-decoration-line: line-through; }
-  .item__wraptop--sale {
-    background-color: rgba(40, 42, 55, 0.9);
-    color: #fff;
-    position: absolute;
-    top: 1%;
-    right: 3%;
-    width: 17%;
-    border-radius: 10px;
-    font-size: 1.1rem; }
-
-.price {
-  color: #000;
-  margin-right: 15%; }
-
-.old-price {
-  margin-right: 1%; }
+  .item__wraptop1--pricewrap {
+    text-align: left; }
+    .item__wraptop1--pricewrap .old-price {
+      margin-left: 16px;
+      color: rgba(128, 128, 128, 0.35);
+      text-decoration: line-through; }
+  .item__wraptop1 .price {
+    color: #000;
+    margin-left: 15px; }
+  .item__wraptop1 .orange {
+    color: #ff5f2b; }
 
 .icon-top {
   width: 1.5rem;
@@ -767,7 +791,7 @@ body {
   position: relative;
   z-index: 1; }
 
-.item__wraptop-icon {
+.item__wraptop1-icon {
   width: 2rem;
   height: 2rem;
   fill: #ff5f2b; }
@@ -778,7 +802,7 @@ body {
   fill: #343748;
   position: absolute;
   bottom: .4rem;
-  left: -16px;
+  left: 0;
   font-weight: 600; }
 
 .oldprice-icon {
@@ -787,7 +811,7 @@ body {
   fill: rgba(128, 128, 128, 0.51);
   position: absolute;
   bottom: .4rem;
-  left: 34%;
+  left: 20%;
   font-weight: 600; }
 
 .shop-icon {
@@ -799,7 +823,8 @@ body {
   left: -7px; }
 
 .btn__buy {
-  position: absolute; }
+  position: absolute;
+  opacity: 0; }
   .btn__buy--btn {
     border: none;
     background-color: rgba(40, 42, 55, 0.9);
