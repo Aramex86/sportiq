@@ -54,35 +54,55 @@
   align-items: flex-end;
 
 
+  &:hover .item__wraptop1--item{
+    transform: translateX(0);
+    transition: all 1s;
+  }
+
   &--list {
     display: inline-flex;
     justify-content: space-between;
+
+  }
+  &--sale {
+    background-color: rgba(40, 42, 55, 0.9);
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #fff;
+    border-radius: 10px;
+    width: 15%;
+    font-size: 1.2rem;
+    text-align: center;
+
   }
   &--item {
     display: inline-flex;
     position: relative;
     width: 24%;
-    &:hover .item__wraptop1-icon{
+
+
+    &:hover .item__wraptop1-icon {
       transform: translateY(-2.7rem);
       opacity: 0;
-      transition: all 1s ;
+      transition: all 1s;
     }
-    &:hover .product-name{
+    &:hover .product-name {
       transform: translateY(-2.6rem);
-      transition: all 1s ;
+      transition: all 1s;
       color: $logo-color;
     }
-    &:hover .item__wraptop1--pricewrap{
+    &:hover .item__wraptop1--pricewrap {
       transform: translateY(-2.6rem);
-      transition: all 1s ;
+      transition: all 1s;
     }
-    &:hover .btn__buy{
+    &:hover .btn__buy {
       opacity: 1;
       transform: translateY(-2.3rem);
-      transition: all 1s ;
+      transition: all 1s;
     }
-    &:nth-child(5){
-      display: none;
+    &:nth-child(5) {
+     display: none;
     }
   }
   &--link {
@@ -94,55 +114,39 @@
   &--img {
     width: 100%;
     background-color: $item-header-color1;
-    padding: 2rem;
+    padding: 3rem;
   }
-  &--pricewrap{
-    text-align: left;
-    .old-price{
-      margin-left: 16px;
+  &--pricewrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .old-price {
       color: $header-border;
       text-decoration: line-through;
+    }
+  }
+  .price {
+    color: $social-header;
   }
 
+  .old-price {
   }
-
-
-
-.price {
-  color: $social-header;
-  margin-left: 15px;
 }
 
-.old-price {
+//wraptop2
+.item__wraptop2 {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  //flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end;
 }
-
-.orange{
+.orange {
   color: $logo-color;
 }
 
-  /*
-///Item-Slider
-.item-slidrerwrap{
-
-    height: auto;
-  position: relative;
-  &--list{
-    outline: 1px solid orangered;
-  }
-  &--item{
-
-  }
-  &--link{
-    text-decoration: none;
-  }
-  &--img{
-    width: 23%;
-    background-color: $item-header-color1;
-    padding: 2rem;
-  }
-
-*/
-}
 
 
 

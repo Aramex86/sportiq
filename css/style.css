@@ -661,32 +661,23 @@ body {
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  align-items: flex-end;
-  /*
-///Item-Slider
-.item-slidrerwrap{
-
-    height: auto;
-  position: relative;
-  &--list{
-    outline: 1px solid orangered;
-  }
-  &--item{
-
-  }
-  &--link{
-    text-decoration: none;
-  }
-  &--img{
-    width: 23%;
-    background-color: $item-header-color1;
-    padding: 2rem;
-  }
-
-*/ }
+  align-items: flex-end; }
+  .item__wraptop1:hover .item__wraptop1--item {
+    transform: translateX(0);
+    transition: all 1s; }
   .item__wraptop1--list {
     display: inline-flex;
     justify-content: space-between; }
+  .item__wraptop1--sale {
+    background-color: rgba(40, 42, 55, 0.9);
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #fff;
+    border-radius: 10px;
+    width: 15%;
+    font-size: 1.2rem;
+    text-align: center; }
   .item__wraptop1--item {
     display: inline-flex;
     position: relative;
@@ -715,18 +706,27 @@ body {
   .item__wraptop1--img {
     width: 100%;
     background-color: rgba(197, 200, 214, 0.29);
-    padding: 2rem; }
+    padding: 3rem; }
   .item__wraptop1--pricewrap {
-    text-align: left; }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
     .item__wraptop1--pricewrap .old-price {
-      margin-left: 16px;
       color: rgba(128, 128, 128, 0.35);
       text-decoration: line-through; }
   .item__wraptop1 .price {
-    color: #000;
-    margin-left: 15px; }
-  .item__wraptop1 .orange {
-    color: #ff5f2b; }
+    color: #000; }
+
+.item__wraptop2 {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end; }
+
+.orange {
+  color: #ff5f2b; }
 
 .icon-top {
   width: 1.5rem;
@@ -800,8 +800,8 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   fill: #343748;
-  position: absolute;
-  bottom: .4rem;
+  position: relative;
+  bottom: -0.2rem;
   left: 0;
   font-weight: 600; }
 
@@ -809,9 +809,9 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   fill: rgba(128, 128, 128, 0.51);
-  position: absolute;
-  bottom: .4rem;
-  left: 20%;
+  position: relative;
+  bottom: -0.2rem;
+  left: 7%;
   font-weight: 600; }
 
 .shop-icon {
