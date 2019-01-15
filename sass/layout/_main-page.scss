@@ -7,3 +7,44 @@
   box-shadow: 0 1rem  2rem rgba(0,0,0, 0.2);
   padding-top: 5rem;
 }
+.paralax{
+  width: 100%;
+  background-image: url("../img/box.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 25rem 0;
+  &__text{
+    color: $header-background;
+    position: absolute;
+    left: 15%;
+    top: 26%;
+    font-size: 3rem;
+    &--item1{
+      font-size: 2rem;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    &--item2{
+      font-size: 4rem;
+      letter-spacing: 3px;
+      font-weight: 100;
+    }
+    &--item3{
+      font-size: 4rem;
+      font-weight: 600;
+      color: #ff5f2b;
+    }
+  }
+}
+.item-bottom{
+  max-width: 120rem;
+
+
+  //test
+  height: 800px;
+}

@@ -52,11 +52,24 @@
   position: relative;
   overflow: hidden;
   align-items: flex-end;
-
-
   &:hover .item__wraptop1--item{
     transform: translateX(0);
     transition: all 1s;
+  }
+  &--eye{
+    background-color: $button-color;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 36%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    &:hover{
+      background-color: $logo-color;
+    }
   }
 
   &--list {
@@ -80,6 +93,14 @@
     display: inline-flex;
     position: relative;
     width: 24%;
+    &:hover .item__wraptop1--eye{
+      opacity: 1;
+      transition: opacity .2s;
+    }
+    &:hover .item__wraptop1--img{
+      opacity: .5;
+      transition: opacity .2s;
+    }
 
 
     &:hover .item__wraptop1-icon {
