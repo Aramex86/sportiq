@@ -12,6 +12,7 @@ $(document).ready(function () {
         autoHover: true
     });
     $(".bx-wrapper").css("border", "none");
+//item Top
     $(".section-item__header--item").eq(0).addClass("orange");
     $(".section-item__header--item").click(function () {
         $(".section-item__header--item").eq(0).removeClass("orange");
@@ -76,8 +77,58 @@ $(document).ready(function () {
         $(".item__wraptop1--item").eq(5).show(500);
         $(".item__wraptop1--item").eq(9).hide(500);
     });
+    //item Bottom
+    $(".section-itembottom__header--item").eq(0).addClass("orange");
+    $(".section-itembottom__header--item").click(function () {
+        $(".section-itembottom__header--item").eq(0).removeClass("orange");
+        $(".section-itembottom__header--item").eq(1).removeClass("orange");
+        $(".section-itembottom__header--item").eq(2).removeClass("orange");
+        $(this).toggleClass("orange");
+    });
 
-
+    $(".Outdoor-Sports,.Biribol").hide();
+    $(".section-itembottom__header--item").eq(0).click(function () {
+        $(".Sports-aceessories").show();
+        $(".Outdoor-Sports,.Biribol").hide();
+    });
+    $(".section-itembottom__header--item").eq(1).click(function () {
+        $(".Outdoor-Sports").show();
+        $(".Sports-aceessories,.Biribol").hide();
+    });
+    $(".section-itembottom__header--item").eq(2).click(function () {
+        $(".Biribol").show();
+        $(".Sports-aceessories,.Outdoor-Sports").hide();
+    });
+    $(".item-header__btns--prev").click(function () {
+        $(".Sports-aceessories").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(34).show(500);
+        $(".item__wraptop1--item").eq(30).hide(500);
+    });
+    $(".item-header__btns--next").click(function () {
+        $(".Best-Sellers").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(34).hide(500);
+        $(".item__wraptop1--item").eq(30).show(500);
+    });
+    $(".item-header__btns--prev").click(function () {
+        $(".New-Arrivals").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(39).show(500);
+        $(".item__wraptop1--item").eq(35).hide(500);
+    });
+    $(".item-header__btns--next").click(function () {
+        $(".New-Arrivals").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(39).hide(500);
+        $(".item__wraptop1--item").eq(35).show(500);
+    });
+    $(".item-header__btns--prev").click(function () {
+        $(".Featured-products").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(44).show(500);
+        $(".item__wraptop1--item").eq(40).hide(500);
+    });
+    $(".item-header__btns--next").click(function () {
+        $(".Featured-products").animate({"left":"-1"},"slow");
+        $(".item__wraptop1--item").eq(44).hide(500);
+        $(".item__wraptop1--item").eq(40).show(500);
+    });
 });
 
 
