@@ -129,6 +129,14 @@ $(document).ready(function () {
         $(".item__wraptop1--item").eq(44).hide(500);
         $(".item__wraptop1--item").eq(40).show(500);
     });
+    /////////////////////
+    //Bottom slider
+
+
+
+
+
+
 });
 
 

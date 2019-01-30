@@ -9,7 +9,7 @@
   }
   &--item {
     display: inline-block;
-    padding: 0rem 2.5rem;
+    padding: 0 2.5rem;
     position: relative;
     color: $item-header-color1;
     cursor: pointer;
@@ -43,64 +43,88 @@
     -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
   }
-  .orange{
+  .orange {
     color: $logo-color;
   }
 }
-.sale-wrap{
-  width: 55%;
 
-  &__bottom{
-    margin-top: 5rem;
-    border: 3px solid $header-border;
-    width: 100%;
+.bottom-part {
 
-
-    //test
-    height: 500px;
-
-    &--bigitem{
-      outline: 1px solid orangered;
-      width: 50%;
-      text-align: center;
-      background-color: $item-header-color1;
-      margin:1.5rem;
-    }
-    &--link{
-
-    }
-    &--img{
+  &__special-products {
+    width: 60%;
+    &--header {
       width: 100%;
-
+      background-color: $button-color;
+      padding: 1rem 0;
+      display: flex;
+    }
+    &--headername {
+      color: $item-header-color;
+      margin-left: 2rem;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -44%;
+        left: 40%;
+        height: 77%;
+        width: 16%;
+        background-color: #fff;
+        -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
+        clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
+      }
+    }
+    &--controls {
+      margin-left: auto;
+      margin-right: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    &--prev {
+      width: 2rem;
+      height: 1.5rem;
+      border: none;
+      background-color: $header-background;
+      -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+      clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+      cursor: pointer;
+    }
+    &--next {
+      width: 2rem;
+      height: 1.5rem;
+      background-color: $header-background;
+      border: none;
+      -webkit-clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+      clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+      cursor: pointer;
     }
   }
 }
-.sale-bottom__slider{
-    width: 53%;
-    height: 10%;
-    overflow: hidden;
 
-  &--list{
+.view-port-container {
+  outline: 4px solid $features-backgroud;
+  margin-top: 3rem;
 
+  //test
+  height: 500px;
+
+  display: flex;
+  justify-content: space-between;
+  &--left {
+    outline: 1px solid greenyellow;
+    width: 46%;
   }
-  &--item{
-    display: inline;
-  }
-  &--img{
-    width: 20%;
-    background-color: $item-header-color1;
+  &--right {
+    outline: 1px solid palevioletred;
+    width: 52%;
+
   }
 
 }
 
 
 
-
-
-
-.testimonials-wrap{
-  width: 40%;
-}
 
 
 
