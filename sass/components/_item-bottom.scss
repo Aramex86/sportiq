@@ -111,14 +111,28 @@
 
   display: flex;
   justify-content: space-between;
-  &--left {
+  &__left {
     outline: 1px solid greenyellow;
     width: 46%;
+    &--img{
+      background-color: rgba(197, 200, 214, 0.29);
+      margin: 1.2rem;
+      cursor: pointer;
+    }
+    &--img1{
+      width: 100%;
+      padding: 2rem;
+
+    }
   }
-  &--right {
+  &__right {
     outline: 1px solid palevioletred;
     width: 52%;
-
+    position: relative;
+  }
+  .time-container{
+    margin-top: 8rem;
+    display: flex;
   }
 
 }

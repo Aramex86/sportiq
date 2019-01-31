@@ -128,12 +128,23 @@ body {
   height: 500px;
   display: flex;
   justify-content: space-between; }
-  .view-port-container--left {
+  .view-port-container__left {
     outline: 1px solid greenyellow;
     width: 46%; }
-  .view-port-container--right {
+    .view-port-container__left--img {
+      background-color: rgba(197, 200, 214, 0.29);
+      margin: 1.2rem;
+      cursor: pointer; }
+    .view-port-container__left--img1 {
+      width: 100%;
+      padding: 2rem; }
+  .view-port-container__right {
     outline: 1px solid palevioletred;
-    width: 52%; }
+    width: 52%;
+    position: relative; }
+  .view-port-container .time-container {
+    margin-top: 8rem;
+    display: flex; }
 
 .suport {
   background-color: #343748;
@@ -907,6 +918,11 @@ body {
   height: 2rem;
   fill: #ff5f2b; }
 
+.item__wraptop1-icon1 {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: #ff5f2b; }
+
 .price-icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -941,6 +957,14 @@ body {
   left: 13%;
   fill: #fff; }
 
+.eye-icon1 {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+  position: absolute;
+  top: 13%;
+  left: 15%; }
+
 .btn__buy {
   position: absolute;
   opacity: 0; }
@@ -956,6 +980,39 @@ body {
     line-height: 31px;
     outline: none; }
     .btn__buy--btn:hover {
+      background-color: #ff5f2b; }
+
+.btn__buy1 {
+  position: absolute;
+  width: 100%;
+  display: flex; }
+  .btn__buy1--btn {
+    border: none;
+    background-color: rgba(40, 42, 55, 0.9);
+    color: #fff;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 31px;
+    outline: none;
+    margin-right: 1rem; }
+    .btn__buy1--btn:hover {
+      background-color: #ff5f2b; }
+  .btn__buy1--view-item {
+    position: relative;
+    border: none;
+    background-color: rgba(40, 42, 55, 0.9);
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 31px;
+    outline: none; }
+    .btn__buy1--view-item:hover {
       background-color: #ff5f2b; }
 
 .header-topwrap {
