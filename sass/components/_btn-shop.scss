@@ -21,6 +21,8 @@
   position: absolute;
   width: 100%;
   display: flex;
+  margin-top: 20px;
+
   &--btn{
     border: none;
     background-color: rgba(40, 42, 55, 0.9);
@@ -33,6 +35,7 @@
     line-height: 31px;
     outline: none;
     margin-right: 1rem;
+    cursor: pointer;
     &:hover{
       background-color: $logo-color;
     }
@@ -49,6 +52,7 @@
     font-weight: bold;
     line-height: 31px;
     outline: none;
+    cursor: pointer;
     &:hover{
       background-color: $logo-color;
     }

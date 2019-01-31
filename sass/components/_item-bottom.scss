@@ -105,14 +105,21 @@
 .view-port-container {
   outline: 4px solid $features-backgroud;
   margin-top: 3rem;
+  &:hover a{
+    color: $logo-color;
+  }
+  &::before &--img{
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #449fdb;
 
-  //test
-  height: 500px;
+  }
 
   display: flex;
   justify-content: space-between;
   &__left {
-    outline: 1px solid greenyellow;
     width: 46%;
     &--img{
       background-color: rgba(197, 200, 214, 0.29);
@@ -126,15 +133,44 @@
     }
   }
   &__right {
-    outline: 1px solid palevioletred;
     width: 52%;
     position: relative;
+    .buy-wrap{
+      padding: 1.3rem 1rem;
+    }
+    &--prodname{
+      text-decoration: none;
+      color:$item-header-color;
+    }
+    & div:nth-child(3){
+      margin-top: 12px;
+    }
   }
   .time-container{
     margin-top: 8rem;
     display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
+  .box-style{
+    color: $header-background;
+    width: 8rem;
+    height: 8rem;
+    background-color: $button-color;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-top: 8px;
+    border-radius: 6px;
 
+    & p{
+      margin-top: .5rem;
+      border-top:1px solid rgba(255,255,255,0.46);
+      font-size: 1.5rem;
+      padding: .5rem 0;
+
+    }
+  }
 }
 
 
