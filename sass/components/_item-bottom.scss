@@ -49,9 +49,14 @@
 }
 
 .bottom-part {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+
 
   &__special-products {
-    width: 60%;
+    width: 58%;
+    overflow: hidden;
     &--header {
       width: 100%;
       background-color: $button-color;
@@ -101,10 +106,25 @@
     }
   }
 }
-
+.view-port-containerwrap{
+ // display: -webkit-box;
+.polosa{
+  display: -webkit-box;
+  transition: all 0.7s ease;
+  position: relative;
+  right: 0;
+}
+}
 .view-port-container {
-  outline: 4px solid $features-backgroud;
+  outline: 4px solid #f5f5f5;
   margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  position: relative;
+
   &:hover a{
     color: $logo-color;
   }
@@ -114,11 +134,7 @@
     width: 2rem;
     height: 2rem;
     background-color: #449fdb;
-
   }
-
-  display: flex;
-  justify-content: space-between;
   &__left {
     width: 46%;
     &--img{
@@ -172,7 +188,12 @@
     }
   }
 }
+.testimonials-wrap{
+  outline: 1px solid orangered;
+  width: 40%;
 
+
+}
 
 
 

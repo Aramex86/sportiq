@@ -137,7 +137,7 @@ $(document).ready(function () {
         hour = minute * 60,
         day = hour * 24;
 
-    let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
+    let countDown = new Date('Sep 10, 2019 00:00:00').getTime(),
         x = setInterval(function() {
 
             let now = new Date().getTime(),
@@ -146,7 +146,20 @@ $(document).ready(function () {
                 document.getElementById('day').innerText = Math.floor(distance / (day)),
                 document.getElementById('hour').innerText = Math.floor((distance % (day)) / (hour)),
                 document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById('second').innerText = Math.floor((distance % (minute)) / second);
+                document.getElementById('second').innerText = Math.floor((distance % (minute)) / second),
+                //second sale
+                document.getElementById('day1').innerText = Math.floor(distance / (day)),
+                document.getElementById('hour1').innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes1').innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('second1').innerText = Math.floor((distance % (minute)) / second),
+                //third sale
+                document.getElementById('day2').innerText = Math.floor(distance / (day)),
+                document.getElementById('hour2').innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes2').innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('second2').innerText = Math.floor((distance % (minute)) / second);
+
+
+
 
             //do something later when date is reached
             //if (distance < 0) {
@@ -154,7 +167,35 @@ $(document).ready(function () {
             //  'IT'S MY BIRTHDAY!;
             //}
 
-        }, second)
+        }, second);
+
+var right = 0;
+var polosa = $('.polosa');
+
+    $('.bottom-part__special-products--next').click(function (event) {
+        event.preventDefault();
+       $(polosa).animate({
+           right:right+=696,
+           });
+       if (right > 1300){
+         right=-696
+       }
+    });
+    $('.bottom-part__special-products--prev').click(function (event) {
+        event.preventDefault();
+        $(polosa).animate({
+            right:right+=696,
+        });
+        if (right > 1300){
+            right=-696
+        }
+    });
+
+
+
+
+
+
 
 
 
