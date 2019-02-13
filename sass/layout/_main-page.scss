@@ -46,11 +46,20 @@
   margin: 0 auto;
   box-shadow: 0 1rem  2rem rgba(0,0,0, 0.2);
   padding-top: 5rem;
-
-  //test
-  height: 2000px;
+  padding-bottom: 5rem;
 }
 .bottom-part{
   display: flex;
   padding: 0 2rem;
 }
+.section-news{
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: $header-background;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  //test
+  height: 700px;
+
+}
+

@@ -15,6 +15,65 @@ body {
   font-weight: 400;
   font-size: 1.5rem; }
 
+.section-news__header {
+  background-color: #343748;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-news__header--heading {
+    color: rgba(197, 200, 214, 0.29);
+    position: relative; }
+    .section-news__header--heading::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -46%;
+      left: 40%;
+      height: 77%;
+      width: 16%;
+      background-color: #fff;
+      -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
+      clip-path: polygon(51% 53%, 96% 100%, 5% 100%); }
+
+.section-news__btns {
+  display: flex;
+  align-items: center; }
+  .section-news__btns--next {
+    width: 2rem;
+    height: 1.5rem;
+    border: none;
+    background-color: #fff;
+    -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+    clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+    cursor: pointer; }
+  .section-news__btns--prev {
+    width: 2rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: none;
+    -webkit-clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+    clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+    cursor: pointer; }
+
+.section-news__postwrap {
+  margin-top: 3rem;
+  padding: 0 2rem; }
+  .section-news__postwrap--imgwrap {
+    width: 33.33%; }
+    .section-news__postwrap--imgwrap-img {
+      width: 100%; }
+  .section-news__postwrap--bottompart-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000;
+    letter-spacing: 5px; }
+  .section-news__postwrap--bottompart-text {
+    width: 35%;
+    margin-bottom: 10px; }
+  .section-news__postwrap--bottompart-link1 {
+    color: #000; }
+
 .item-header__btns {
   margin-left: auto;
   margin-right: 4rem;
@@ -1403,8 +1462,15 @@ body {
   margin: 0 auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   padding-top: 5rem;
-  height: 2000px; }
+  padding-bottom: 5rem; }
 
 .bottom-part {
   display: flex;
   padding: 0 2rem; }
+
+.section-news {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  height: 700px; }

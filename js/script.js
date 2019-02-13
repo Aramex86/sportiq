@@ -212,6 +212,7 @@ $(document).ready(function () {
         });
         if (right < 0 ){
             $('.polosa1').stop();
+            right=0;
         }
     });
     $('.testimonials-wrap__bodywrap--bottom-item:nth-child(1)').click(function () {
