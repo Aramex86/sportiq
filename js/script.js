@@ -168,31 +168,67 @@ $(document).ready(function () {
             //}
 
         }, second);
-
-var right = 0;
-var polosa = $('.polosa');
+    //Sale slider
+    var right = 0;
+    var polosa = $('.polosa');
 
     $('.bottom-part__special-products--next').click(function (event) {
         event.preventDefault();
-       $(polosa).animate({
-           right:right+=696,
-           });
-       if (right > 1300){
-         right=-696
-       }
+        $(polosa).animate({
+            right: right += 673,
+        });
+        if (right > 1300) {
+            right = -673
+        }
     });
     $('.bottom-part__special-products--prev').click(function (event) {
         event.preventDefault();
         $(polosa).animate({
-            right:right+=696,
+            right: right += 673,
         });
-        if (right > 1300){
-            right=-696
+        if (right > 1300) {
+            right = -673
         }
     });
+    //Testimonials
 
-
-
+    $('.testimonials-wrap__bodywrap--bottom-itembtn').hover(function () {
+        $('.testimonials-wrap__bodywrap--bottom-itembtn').removeClass("active");
+       $(this).toggleClass("active");
+    });
+    $('.testimonials-wrap__header--next').click(function (event) {
+       event.preventDefault();
+       $('.polosa1').animate({
+           right: right +=464,
+       });
+       if (right > 1000){
+           $('.polosa1').stop();
+       }
+    });
+    $('.testimonials-wrap__header--prev').click(function (event) {
+        event.preventDefault();
+        $('.polosa1').animate({
+            right: right -=464,
+        });
+        if (right < 0 ){
+            $('.polosa1').stop();
+        }
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(1)').click(function () {
+        $('.polosa1').animate({
+            right:0,
+        });
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(2)').click(function () {
+        $('.polosa1').animate({
+            right:464,
+        });
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(3)').click(function () {
+        $('.polosa1').animate({
+            right:928,
+        });
+    });
 
 
 
