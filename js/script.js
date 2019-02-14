@@ -192,6 +192,7 @@ $(document).ready(function () {
     });
     //Testimonials
 
+
     $('.testimonials-wrap__bodywrap--bottom-itembtn').hover(function () {
         $('.testimonials-wrap__bodywrap--bottom-itembtn').removeClass("active");
        $(this).toggleClass("active");
@@ -230,9 +231,25 @@ $(document).ready(function () {
             right:928,
         });
     });
+    //Blog slider
 
 
-
+    $('.section-news__btns--prev').click(function () {
+        $('.polosa2').animate({
+            right:right+=400,
+        });
+        if (right > 800){
+            $('.polosa2').stop();
+        }
+    });
+    $('.section-news__btns--next').click(function () {
+        $('.polosa2').animate({
+            right:right-=400,
+        });
+        if (right < 0){
+            $('.polosa2').stop();
+        }
+    });
 
 
 
