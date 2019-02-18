@@ -1239,6 +1239,12 @@ body {
   top: 13%;
   left: 15%; }
 
+.footer-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: orangered;
+  margin-right: 5px; }
+
 .btn__buy {
   position: absolute;
   opacity: 0; }
@@ -1334,6 +1340,56 @@ body {
 
 .slide:not(:last-child) {
   border-right: 1px solid #494b5b; }
+
+.footer {
+  width: 100%;
+  background-color: #fff;
+  height: 500px; }
+  .footer__top {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    height: 400px; }
+    .footer__top--item {
+      width: 25%;
+      padding: 7rem 1rem;
+      position: relative; }
+      .footer__top--item:not(:last-of-type) {
+        border-right: 1px solid #e5e5e5; }
+      .footer__top--item:nth-child(1) li {
+        padding: 2.2rem 0; }
+      .footer__top--item-heading {
+        margin-bottom: 20px;
+        font-size: 1.7rem; }
+      .footer__top--item-list {
+        color: rgba(128, 128, 128, 0.51);
+        font-size: 1.4rem; }
+        .footer__top--item-list-item {
+          padding: 1rem 0; }
+          .footer__top--item-list-item span {
+            margin-left: 23px; }
+        .footer__top--item-list-link {
+          text-decoration: none;
+          color: rgba(128, 128, 128, 0.51);
+          position: relative;
+          font-size: 1.4rem; }
+          .footer__top--item-list-link:hover::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 2px;
+            height: 17px;
+            background-color: #ff5f2b;
+            top: 9%;
+            left: -11px; }
+          .footer__top--item-list-link:hover {
+            color: #ff5f2b; }
+  .footer .black {
+    color: black;
+    margin-right: 5px; }
+  .footer__bottom {
+    outline: 1px solid yellowgreen;
+    height: 100px; }
 
 .header-topwrap {
   border-bottom: 1px solid rgba(128, 128, 128, 0.35); }

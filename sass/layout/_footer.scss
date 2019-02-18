@@ -1,0 +1,80 @@
+.footer{
+  width: 100%;
+  background-color: $header-background;
+
+
+  //test
+  height: 500px;
+  &__top{
+    @include center;
+    display: flex;
+    //test
+    height: 400px;
+    &--item{
+      width: 25%;
+      padding:7rem 1rem;
+      position: relative;
+      &:not(:last-of-type){
+        border-right:1px solid #e5e5e5;
+      }
+      &:nth-child(1) li{
+        padding: 2.2rem 0;
+      }
+
+      &-heading{
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+      }
+      &-list{
+        color: $menu-color;
+        font-size: 1.4rem;
+        &-item{
+          padding: 1rem 0;
+          & span{
+            margin-left: 23px;
+          }
+        }
+        &-link{
+          text-decoration: none;
+          color: $menu-color;
+          position: relative;
+          font-size: 1.4rem;
+          &:hover::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 2px;
+            height: 17px;
+            background-color: $logo-color;
+            top: 9%;
+            left: -11px;
+          }
+          &:hover{
+            color: $logo-color;
+          }
+        }
+      }
+    }
+
+
+  }
+.black{
+  color: black;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+  &__bottom{
+    outline: 1px solid yellowgreen;
+
+
+    //test
+    height: 100px;
+  }
+
+
+}
