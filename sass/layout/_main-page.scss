@@ -57,5 +57,9 @@
   margin: 0 auto;
   background-color: $header-background;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  padding-bottom: 50px;
 }
-
+.section-brand{
+  width: 100%;
+  background-color: $brand-slider-bg;
+}

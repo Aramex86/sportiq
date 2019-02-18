@@ -1292,6 +1292,49 @@ body {
     .btn__buy1--view-item:hover {
       background-color: #ff5f2b; }
 
+.brand-sliderwrap {
+  max-width: 115rem;
+  margin: 0 auto;
+  color: white;
+  position: relative; }
+  .brand-sliderwrap:hover .brand-next {
+    display: block; }
+  .brand-sliderwrap:hover .brand-prev {
+    display: block; }
+
+.brand-prev {
+  width: 2rem;
+  height: 2rem;
+  outline: 1px solid greenyellow;
+  position: absolute;
+  left: 1%;
+  top: 37%;
+  text-indent: -1000px;
+  -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+  clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+  background-color: #fff;
+  display: none; }
+  .brand-prev:hover {
+    background-color: #ff5f2b; }
+
+.brand-next {
+  width: 2rem;
+  height: 2rem;
+  outline: 1px solid greenyellow;
+  position: absolute;
+  right: 1%;
+  top: 37%;
+  text-indent: -1000px;
+  clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+  cursor: pointer;
+  background-color: #fff;
+  display: none; }
+  .brand-next:hover {
+    background-color: #ff5f2b; }
+
+.slide:not(:last-child) {
+  border-right: 1px solid #494b5b; }
+
 .header-topwrap {
   border-bottom: 1px solid rgba(128, 128, 128, 0.35); }
 
@@ -1533,4 +1576,9 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   background-color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  padding-bottom: 50px; }
+
+.section-brand {
+  width: 100%;
+  background-color: #2f3447; }

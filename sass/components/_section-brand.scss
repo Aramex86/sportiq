@@ -1,0 +1,49 @@
+.brand-sliderwrap{
+  max-width: 115rem;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+  &:hover .brand-next{
+    display: block;
+  }
+  &:hover .brand-prev{
+    display: block;
+  }
+}
+.brand-prev{
+  width: 2rem;
+  height: 2rem;
+  outline: 1px solid greenyellow;
+  position: absolute;
+  left: 1%;
+  top: 37%;
+  text-indent: -1000px;
+  -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+  clip-path: polygon(100% 0, 33% 51%, 100% 100%);
+  background-color: $header-background;
+  display: none;
+  &:hover{
+    background-color: $logo-color;
+  }
+}
+.brand-next{
+  width: 2rem;
+  height: 2rem;
+  outline: 1px solid greenyellow;
+  position: absolute;
+  right: 1%;
+  top: 37%;
+  text-indent: -1000px;
+  clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
+  cursor: pointer;
+  background-color: $header-background;
+  display: none;
+  &:hover{
+    background-color: $logo-color;
+  }
+}
+.slide{
+  &:not(:last-child){
+    border-right: 1px solid $brand-slider-line;
+  }
+}

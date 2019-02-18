@@ -232,8 +232,6 @@ $(document).ready(function () {
         });
     });
     //Blog slider
-
-
     $('.section-news__btns--prev').click(function () {
         $('.polosa2').animate({
             right:right+=400,
@@ -250,6 +248,25 @@ $(document).ready(function () {
             $('.polosa2').stop();
         }
     });
+    //Brand slider
+    $('.brand-slider').bxSlider({
+        wrapperClass:'bx-brand',
+        pager:false,
+        minSlides:1,
+        maxSlides:5,
+        slideWidth:277,
+        moveSlides:1,
+        slideMargin:20
+    });
+
+    $('.bx-brand div:nth-child(2)').addClass('brand-controls');
+
+    $('.brand-controls div:nth-child(1)').addClass('brand-links-wrap');
+    $('.brand-controls div:nth-child(1)').removeClass('bx-controls-direction');
+    $('.brand-links-wrap a:nth-child(1)').addClass('brand-prev');
+    $('.brand-links-wrap a:nth-child(1)').removeClass('bx-prev');
+    $('.brand-links-wrap a:nth-child(2)').addClass('brand-next');
+    $('.brand-links-wrap a:nth-child(2)').removeClass('bx-next');
 
 
 
