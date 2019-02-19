@@ -1,10 +1,6 @@
 .footer{
   width: 100%;
   background-color: $header-background;
-
-
-  //test
-  height: 500px;
   &__top{
     @include center;
     display: flex;
@@ -115,8 +111,6 @@
         }
       }
     }
-
-
   }
 .black{
   color: black;
@@ -128,12 +122,42 @@
 
 
 
-  &__bottom{
-    outline: 1px solid yellowgreen;
+  &__bottomwrap{
+    border-top:1px solid #e5e5e5;
 
+    &--container{
+      @include center();
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+      &-left{
+        padding-left: 2rem;
+        &-link{
+          text-decoration: none;
+          color: $menu-color;
+        }
+      }
+      &-right{
+        padding-right: 2rem;
+        &-list{
+          text-align: right;
+        }
+        &-item{
+          display: inline-flex;
+          width: 7%;
+          margin-right: 4px;
+        }
+        &-link{}
+        &-img{
+          width: 93%;
+          border: 1px solid $logo-color;
+          border-radius: 5px;
+          box-shadow: 2px 2px 7px 0px rgba(40, 42, 55, 0.9);
+        }
 
-    //test
-    height: 100px;
+      }
+    }
   }
 
 

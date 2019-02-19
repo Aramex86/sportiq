@@ -1357,8 +1357,7 @@ body {
 
 .footer {
   width: 100%;
-  background-color: #fff;
-  height: 500px; }
+  background-color: #fff; }
   .footer__top {
     max-width: 120rem;
     margin: 0 auto;
@@ -1447,9 +1446,33 @@ body {
   .footer .black {
     color: black;
     margin-right: 5px; }
-  .footer__bottom {
-    outline: 1px solid yellowgreen;
-    height: 100px; }
+  .footer__bottomwrap {
+    border-top: 1px solid #e5e5e5; }
+    .footer__bottomwrap--container {
+      max-width: 120rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0; }
+      .footer__bottomwrap--container-left {
+        padding-left: 2rem; }
+        .footer__bottomwrap--container-left-link {
+          text-decoration: none;
+          color: rgba(128, 128, 128, 0.51); }
+      .footer__bottomwrap--container-right {
+        padding-right: 2rem; }
+        .footer__bottomwrap--container-right-list {
+          text-align: right; }
+        .footer__bottomwrap--container-right-item {
+          display: inline-flex;
+          width: 7%;
+          margin-right: 4px; }
+        .footer__bottomwrap--container-right-img {
+          width: 93%;
+          border: 1px solid #ff5f2b;
+          border-radius: 5px;
+          box-shadow: 2px 2px 7px 0px rgba(40, 42, 55, 0.9); }
 
 .header-topwrap {
   border-bottom: 1px solid rgba(128, 128, 128, 0.35); }
