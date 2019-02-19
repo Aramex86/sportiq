@@ -1245,6 +1245,20 @@ body {
   fill: orangered;
   margin-right: 5px; }
 
+.footer-icon-inputbtn {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+  transform: rotate(23deg); }
+
+.footer-brandicon {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .btn__buy {
   position: absolute;
   opacity: 0; }
@@ -1348,8 +1362,7 @@ body {
   .footer__top {
     max-width: 120rem;
     margin: 0 auto;
-    display: flex;
-    height: 400px; }
+    display: flex; }
     .footer__top--item {
       width: 25%;
       padding: 7rem 1rem;
@@ -1358,6 +1371,10 @@ body {
         border-right: 1px solid #e5e5e5; }
       .footer__top--item:nth-child(1) li {
         padding: 2.2rem 0; }
+      .footer__top--item:nth-child(4) {
+        position: relative; }
+        .footer__top--item:nth-child(4) li:nth-child(2) {
+          position: relative; }
       .footer__top--item-heading {
         margin-bottom: 20px;
         font-size: 1.7rem; }
@@ -1384,6 +1401,49 @@ body {
             left: -11px; }
           .footer__top--item-list-link:hover {
             color: #ff5f2b; }
+      .footer__top--item-input {
+        width: 80%;
+        margin: 0 auto;
+        height: 43px;
+        border: 2px solid rgba(197, 200, 214, 0.29);
+        border-radius: 5px;
+        outline: none; }
+        .footer__top--item-input::placeholder {
+          color: rgba(115, 118, 132, 0.28);
+          font-size: 1.5rem;
+          padding-left: 10px; }
+        .footer__top--item-input:focus {
+          border: 2px solid #ff5f2b;
+          background-color: #fff;
+          padding-left: 10px; }
+      .footer__top--item-inputbtn {
+        width: 49px;
+        height: 34px;
+        position: absolute;
+        top: 22%;
+        right: 22%;
+        background-color: #ff5f2b;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer; }
+        .footer__top--item-inputbtn:hover {
+          background-color: rgba(40, 42, 55, 0.9); }
+      .footer__top--item .social__list-item {
+        display: inline-block;
+        margin-right: 10px;
+        background-color: rgba(40, 42, 55, 0.9);
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        border-radius: 8px; }
+        .footer__top--item .social__list-item--link img {
+          width: 3rem;
+          height: 3rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
   .footer .black {
     color: black;
     margin-right: 5px; }

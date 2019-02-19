@@ -8,8 +8,6 @@
   &__top{
     @include center;
     display: flex;
-    //test
-    height: 400px;
     &--item{
       width: 25%;
       padding:7rem 1rem;
@@ -19,6 +17,12 @@
       }
       &:nth-child(1) li{
         padding: 2.2rem 0;
+      }
+      &:nth-child(4){
+        position: relative;
+        & li:nth-child(2){
+          position: relative;
+        }
       }
 
       &-heading{
@@ -51,6 +55,62 @@
           }
           &:hover{
             color: $logo-color;
+          }
+        }
+      }
+      &-input{
+        width: 80%;
+        margin: 0 auto;
+        height: 43px;
+        border:2px solid $item-header-color1;
+        border-radius: 5px;
+        outline: none;
+        &::placeholder{
+          color: rgba(115, 118, 132, 0.28);
+          font-size: 1.5rem;
+          padding-left: 10px;
+        }
+        &:focus{
+          border: 2px solid $logo-color;
+          background-color: $header-background;
+          padding-left: 10px;
+        }
+      }
+      &-inputbtn{
+        width: 49px;
+        height: 34px;
+        position: absolute;
+        top: 22%;
+        right: 22%;
+        background-color: $logo-color;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+          background-color: $button-color;
+        }
+      }
+      .social__list{
+        &-item{
+          display: inline-block;
+          margin-right: 10px;
+          background-color: $button-color;
+          width: 4rem;
+          height: 4rem;
+          position: relative;
+          border-radius: 8px;
+
+          &--link{
+
+            & img{
+              width:3rem;
+              height: 3rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
           }
         }
       }

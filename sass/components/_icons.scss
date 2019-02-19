@@ -134,3 +134,17 @@
   fill: orangered;
   margin-right: 5px;
 }
+.footer-icon-inputbtn{
+  width: 2rem;
+  height: 2rem;
+  fill: $header-background;
+  transform: rotate(23deg);
+}
+.footer-brandicon{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
