@@ -318,6 +318,9 @@
           height: .7rem;
           left: 32%;
           top: 27%;
+          @include respond(tab-land){
+            left: 27%;
+          }
         }
       }
     }

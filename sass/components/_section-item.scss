@@ -41,6 +41,9 @@
     background-color: #fff;
     -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
+    @include respond(tab-land){
+      bottom: -71%;
+    }
   }
 }
 

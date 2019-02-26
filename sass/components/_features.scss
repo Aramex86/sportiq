@@ -11,6 +11,9 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 .5rem .5rem rgba(0,0,0, .1);
+    @include respond(tab-land){
+      width: 32%;
+    }
     &--text{
       color: $dark-color1;
       width: 60%;
@@ -32,6 +35,14 @@
     &--img{
       width: 60%;
       padding-right: 2.5rem;
+      @include respond(tab-land){
+        width: 60%;
+      }
+      &--1{
+        @include respond(tab-land){
+          width: 100%;
+        }
+      }
     }
   }
   &__item1::before{
@@ -94,6 +105,9 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 .5rem .5rem rgba(0,0,0, .1);
+    @include respond(tab-land){
+      width: 32%;
+    }
     &--text{
       color: $dark-color1;
       width: 60%;
@@ -112,9 +126,15 @@
       }
     }
     &--img{
-      width: 60%;
+      width: 53%;
       padding-right: 2.5rem;
       transform: translateY(-9%);
+      @include respond(tab-land){
+        width: 60%;
+      }
+      &--2{
+        width: 100%;
+      }
     }
   }
   &__item2::before{
@@ -173,6 +193,9 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 .5rem .5rem rgba(0,0,0, .1);
+    @include respond(tab-land){
+      width: 32%;
+    }
     &--text {
       color: $dark-color1;
       width: 60%;
@@ -191,8 +214,14 @@
       }
     }
     &--img {
-      width: 60%;
+      width: 53%;
       padding-right: 2.5rem;
+      @include respond(tab-land){
+        width: 60%;
+      }
+      &--3{
+        width: 100%;
+      }
     }
   }
   &__item3::before{

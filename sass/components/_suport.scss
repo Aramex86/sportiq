@@ -38,6 +38,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    @include respond(tab-land){
+      width: 51%;
+    }
   }
   &__item::after {
       content: "";

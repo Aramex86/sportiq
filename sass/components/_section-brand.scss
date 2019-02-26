@@ -3,6 +3,9 @@
   margin: 0 auto;
   color: white;
   position: relative;
+  @include respond(tab-land){
+    max-width: 96rem;
+  }
   &:hover .brand-next{
     display: block;
   }

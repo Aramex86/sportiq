@@ -16,6 +16,9 @@
     z-index: -1;
     position: relative;
     width: 169rem !important;
+   @include respond(tab-land){
+     width: 141rem !important;
+    }
     &--text {
       position: absolute;
       top: 33%;
@@ -54,6 +57,9 @@
     z-index: -1;
     position: relative;
     width: 169rem !important;
+    @include respond(tab-land){
+      width: 141rem !important;
+    }
   }
   &__slide3 {
     text-align: center;
@@ -65,6 +71,9 @@
     z-index: -1;
     position: relative;
     width: 169rem !important;
+    @include respond(tab-land){
+      width: 141rem !important;
+    }
     &--text {
       position: absolute;
       top: 33%;

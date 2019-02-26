@@ -1,45 +1,45 @@
-.footer{
+.footer {
   width: 100%;
   background-color: $header-background;
-  &__top{
+  &__top {
     @include center;
     display: flex;
-    &--item{
+    &--item {
       width: 25%;
-      padding:7rem 1rem;
+      padding: 7rem 1rem;
       position: relative;
-      &:not(:last-of-type){
-        border-right:1px solid #e5e5e5;
+      &:not(:last-of-type) {
+        border-right: 1px solid #e5e5e5;
       }
-      &:nth-child(1) li{
+      &:nth-child(1) li {
         padding: 2.2rem 0;
       }
-      &:nth-child(4){
+      &:nth-child(4) {
         position: relative;
-        & li:nth-child(2){
+        & li:nth-child(2) {
           position: relative;
         }
       }
 
-      &-heading{
+      &-heading {
         margin-bottom: 20px;
         font-size: 1.7rem;
       }
-      &-list{
+      &-list {
         color: $menu-color;
         font-size: 1.4rem;
-        &-item{
+        &-item {
           padding: 1rem 0;
-          & span{
+          & span {
             margin-left: 23px;
           }
         }
-        &-link{
+        &-link {
           text-decoration: none;
           color: $menu-color;
           position: relative;
           font-size: 1.4rem;
-          &:hover::before{
+          &:hover::before {
             content: "";
             display: block;
             position: absolute;
@@ -49,30 +49,33 @@
             top: 9%;
             left: -11px;
           }
-          &:hover{
+          &:hover {
             color: $logo-color;
           }
         }
       }
-      &-input{
+      &-input {
         width: 80%;
         margin: 0 auto;
         height: 43px;
-        border:2px solid $item-header-color1;
+        border: 2px solid $item-header-color1;
         border-radius: 5px;
         outline: none;
-        &::placeholder{
+        @include respond(tab-land){
+          width: 90%;
+        }
+        &::placeholder {
           color: rgba(115, 118, 132, 0.28);
           font-size: 1.5rem;
           padding-left: 10px;
         }
-        &:focus{
+        &:focus {
           border: 2px solid $logo-color;
           background-color: $header-background;
           padding-left: 10px;
         }
       }
-      &-inputbtn{
+      &-inputbtn {
         width: 49px;
         height: 34px;
         position: absolute;
@@ -83,12 +86,15 @@
         border-radius: 5px;
         outline: none;
         cursor: pointer;
-        &:hover{
+        @include respond(tab-land){
+          right: 12%;
+        }
+        &:hover {
           background-color: $button-color;
         }
       }
-      .social__list{
-        &-item{
+      .social__list {
+        &-item {
           display: inline-block;
           margin-right: 10px;
           background-color: $button-color;
@@ -97,59 +103,55 @@
           position: relative;
           border-radius: 8px;
 
-          &--link{
+          &--link {
 
-            & img{
-              width:3rem;
+            & img {
+              width: 3rem;
               height: 3rem;
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%,-50%);
+              transform: translate(-50%, -50%);
             }
           }
         }
       }
     }
   }
-.black{
-  color: black;
-  margin-right: 5px;
-}
+  .black {
+    color: black;
+    margin-right: 5px;
+  }
 
+  &__bottomwrap {
+    border-top: 1px solid #e5e5e5;
 
-
-
-
-
-  &__bottomwrap{
-    border-top:1px solid #e5e5e5;
-
-    &--container{
+    &--container {
       @include center();
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 2rem 0;
-      &-left{
+      &-left {
         padding-left: 2rem;
-        &-link{
+        &-link {
           text-decoration: none;
           color: $menu-color;
         }
       }
-      &-right{
+      &-right {
         padding-right: 2rem;
-        &-list{
+        &-list {
           text-align: right;
         }
-        &-item{
+        &-item {
           display: inline-flex;
           width: 7%;
           margin-right: 4px;
         }
-        &-link{}
-        &-img{
+        &-link {
+        }
+        &-img {
           width: 93%;
           border: 1px solid $logo-color;
           border-radius: 5px;
@@ -159,6 +161,5 @@
       }
     }
   }
-
 
 }
