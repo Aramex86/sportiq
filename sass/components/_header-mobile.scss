@@ -17,6 +17,7 @@
       width: 20%;
       display: flex;
       position: relative;
+      justify-content: center;
       .item-count{
         background-color: $logo-color;
         width: 1.5rem;
@@ -27,31 +28,75 @@
         text-align: center;
         font-weight: 500;
         position: absolute;
-        left: 36%;
+        left: 67%;
+        top: -6%;
       }
     }
   }
   &__bottom{
     padding: 0 2rem;
+    position: relative;
+    z-index: 1;
 
     //test
-    height: 400px;
     outline: 1px solid orangered;
 
 
-    &--list{}
-    &--item{}
-    &--link{}
+    &--list{
+
+      &-img{
+        width: 54rem;
+        height: 13rem;
+        overflow: hidden;
+        background-image: url(/img/banner-ball.jpg);
+        background-size: cover;
+        background-position: center center;
+        & span{
+            padding: 2rem ;
+        }
+      }
+      }
+    &--item{
+      padding: 1rem 0;
+      position: relative;
+
+    }
+    &--link{
+      text-decoration: none;
+      color: $button-color;
+      &:hover{
+        color: $logo-color;
+      }
+    }
 
     &--list2{
       padding: 0 3rem;
-      &--item{}
-      &--link{}
+      display: none;
+
+      &-item{
+        padding: 1rem 0;
+      }
+      &-link{
+        text-decoration: none;
+        color: $button-color;
+        &:hover{
+          color: $logo-color;
+        }
+      }
     }
     &--list3{
       padding: 0 4rem;
-      &--item{}
-      &--link{}
+      display: none;
+      &-item{
+        padding: 1rem 0;
+      }
+      &-link{
+        text-decoration: none;
+        color: $button-color;
+        &:hover{
+          color: $logo-color;
+        }
+      }
     }
   }
 
@@ -60,28 +105,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -105,7 +128,7 @@
       width: 100%;
       height: 2px;
       background-color: $item-header-color;
-      top: 14px;
+      top: -3px;
     }
     &::after{
       content: "";

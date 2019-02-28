@@ -174,4 +174,15 @@
     fill: $logo-color;
   }
 }
-
+.mobile-menu-icon{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 4%;
+  &:hover{
+    fill: $logo-color;
+  }
+}
+.turn{
+  transform: rotate(180deg);
+}
