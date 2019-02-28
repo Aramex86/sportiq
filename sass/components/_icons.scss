@@ -5,6 +5,7 @@
   margin-left: -0.7rem;
   &:hover {
     fill: $header-background;
+    cursor: pointer;
   }
 }
 
@@ -50,12 +51,18 @@
 .icon-reg {
   width: 3rem;
   height: 3rem;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .icon-shop {
   width: 3rem;
   height: 3rem;
   margin-right: 7rem;
+  &:hover{
+    cursor: pointer;
+  }
 }
 .side-menu-icon{
   width: 1.5rem;
@@ -148,3 +155,23 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+//tab-port
+.icon-mobilereg{
+  width: 3rem;
+  height: 3rem;
+  fill: $button-color;
+  margin-right: 24px;
+  margin-top: 2px;
+  &:hover{
+    fill: $logo-color;
+  }
+}
+.icon-mobileshop{
+  width: 3rem;
+  height: 3rem;
+  fill: $button-color;
+  &:hover{
+    fill: $logo-color;
+  }
+}
+

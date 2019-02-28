@@ -1,0 +1,121 @@
+.header-mobilewrap {
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: 1px solid purple;
+
+    &--btn {
+      width: 20%;
+      text-align: center;
+    }
+    &--logo {
+      width:60%;
+      text-align: center;
+    }
+    &--regform {
+      width: 20%;
+      display: flex;
+      position: relative;
+      .item-count{
+        background-color: $logo-color;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: $header-background;
+        text-align: center;
+        font-weight: 500;
+        position: absolute;
+        left: 36%;
+      }
+    }
+  }
+  &__bottom{
+    padding: 0 2rem;
+
+    //test
+    height: 400px;
+    outline: 1px solid orangered;
+
+
+    &--list{}
+    &--item{}
+    &--link{}
+
+    &--list2{
+      padding: 0 3rem;
+      &--item{}
+      &--link{}
+    }
+    &--list3{
+      padding: 0 4rem;
+      &--item{}
+      &--link{}
+    }
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//mobile btn
+.mobile__btn{
+    width: 2rem;
+    height: 2rem;
+    background-color: initial;
+    border: none;
+    position: relative;
+    outline: none;
+  &--line{
+    width: 100%;
+    height: 2.5px;
+    background-color: $item-header-color;
+    display: block;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $item-header-color;
+      top: 14px;
+    }
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $item-header-color;
+      top: 2px;
+    }
+  }
+}
+
