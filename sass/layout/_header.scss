@@ -1,5 +1,9 @@
 .header-topwrap {
   border-bottom: 1px solid $header-border;
+  @include respond(tab-port){
+    display: none;
+
+  }
 }
 
 .header-top {
@@ -12,13 +16,13 @@
   font-weight: 500;
   font-size: 1.3rem;
 
+
+
   &__social {
     flex: 0 0 80%;
     border-right: 1px solid $header-border;
     padding: 1rem 0;
-
     &-list {
-
       &-item {
         display: inline-block;
         width: 3rem;
@@ -73,6 +77,11 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  @include respond(tab-port){
+    display: none;
+
+  }
+
 
   &__logo {
     width: 50%;
@@ -146,6 +155,9 @@
   background-color: $logo-text;
   position: relative;
   z-index: 1;
+  @include respond(tab-port){
+    display: none;
+  }
 }
 
 .search-barwrap {
