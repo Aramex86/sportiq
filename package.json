@@ -11,6 +11,7 @@
   "author": "Slava",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5"

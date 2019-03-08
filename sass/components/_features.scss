@@ -30,6 +30,9 @@
         font-size: 3rem;
         color: $logo-color;
         font-weight: 600;
+        @include respond(tab-port){
+          font-size: 2rem;
+        }
       }
     }
     &--img{
@@ -123,6 +126,9 @@
         font-size: 3rem;
         color: $logo-color;
         font-weight: 600;
+        @include respond(tab-port){
+          font-size: 2rem;
+        }
       }
     }
     &--img{
@@ -211,6 +217,9 @@
         font-size: 3rem;
         color: $logo-color;
         font-weight: 600;
+        @include respond(tab-port){
+          font-size: 2rem;
+        }
       }
     }
     &--img {

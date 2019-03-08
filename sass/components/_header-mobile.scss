@@ -38,7 +38,8 @@
     border-top:1px solid $logo-color ;
     position: absolute;
     background-color: $header-background;
-    //width: 0%;
+    width: 26%;
+    visibility: hidden;
     left: -27%;
     &--list{
 
@@ -118,6 +119,22 @@
   }
 
 }
+.show{
+  width: 100%;
+  visibility: visible;
+  -webkit-transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition:         all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  left: 0;
+}
+.hide{
+  width: 0%;
+  visibility: hidden;
+  -webkit-transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition:         all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  left: -27%;
+}
+
+
 
 
 
@@ -188,7 +205,26 @@
     }
   }
 }
-
+.mobile-btn{
+  transform: rotate(80deg);
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.mobile-btnclose{
+  transform: rotate(180deg);
+  opacity: 1;
+  width: 2rem;
+  height: 2rem;
+  background-color: initial;
+  border: none;
+  position: relative;
+  top: -5px;
+  left: -18px;
+  outline: none;
+  transition: all 1s;
+  visibility: visible;
+}
 
 
 

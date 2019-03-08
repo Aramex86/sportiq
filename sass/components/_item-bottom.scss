@@ -105,14 +105,19 @@
     }
   }
 }
-
+#polosa{
+  transition: all 1s ease;
+  position: relative;
+  left: 0;
+}
 .view-port-containerwrap {
+
   // display: -webkit-box;
   .polosa {
     display: -webkit-box;
-    transition: all 0.7s ease;
     position: relative;
-    right: 0;
+    left: 0;
+
   }
 }
 
@@ -126,7 +131,6 @@
   margin-bottom: 4px;
   position: relative;
   padding: 1rem;
-
   &:hover a {
     color: $logo-color;
   }
@@ -170,6 +174,9 @@
     text-align: center;
     justify-content: space-evenly;
     align-items: flex-end;
+    @include respond(tab-port){
+      margin-top: 6rem;
+    }
   }
   .box-style {
     color: $header-background;
