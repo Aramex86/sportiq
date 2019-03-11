@@ -58,3 +58,18 @@
     }
   }
 }
+.mobile-footer-btn{
+  width: 49px;
+  height: 34px;
+  position: absolute;
+  top: 54%;
+  right: 11.5%;
+  background-color: #ff5f2b;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $button-color;
+  }
+}

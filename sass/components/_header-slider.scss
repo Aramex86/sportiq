@@ -22,6 +22,12 @@
     @include respond(tab-port){
       width: 118rem !important;
     }
+    @include respond(phone){
+      width: 79rem !important;
+    }
+    @include respond(small-phone){
+      width: 45rem !important;
+    }
     &--text {
       position: absolute;
       top: 33%;
@@ -34,6 +40,9 @@
       letter-spacing: 1px;
       font-weight: 600;
       margin-bottom: 10px;
+      @include respond(phone){
+        font-size: 3rem;
+      }
     }
     &--item2 {
       font-size: 4rem;
@@ -42,12 +51,19 @@
       &--bold {
         font-weight: 600;
       }
+      @include respond(phone){
+        font-size: 3rem;
+      }
     }
     &--item3 {
       font-size: 4rem;
       font-weight: 600;
       color: $logo-color;
+      @include respond(phone){
+        font-size: 3rem;
+      }
     }
+
   }
   &__slide2 {
     text-align: center;
@@ -66,6 +82,12 @@
     @include respond(tab-port){
       width: 118rem !important;
     }
+    @include respond(phone){
+      width: 79rem !important;
+    }
+    @include respond(small-phone){
+      width: 45rem !important;
+    }
   }
   &__slide3 {
     text-align: center;
@@ -82,6 +104,12 @@
     }
     @include respond(tab-port){
       width: 118rem !important;
+    }
+    @include respond(phone){
+      width: 79rem !important;
+    }
+    @include respond(small-phone){
+      width: 45rem !important;
     }
     &--text {
       position: absolute;

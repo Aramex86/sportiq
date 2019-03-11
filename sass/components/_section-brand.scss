@@ -4,7 +4,13 @@
   color: white;
   position: relative;
   @include respond(tab-land){
-    max-width: 96rem;
+    max-width: 96rem !important;
+  }
+  @include respond(tab-port){
+    max-width: 107rem !important;
+  }
+  @include respond(phone){
+    max-width: 69rem!important;
   }
   &:hover .brand-next{
     display: block;

@@ -1,4 +1,4 @@
-@mixin center(){
+@mixin center() {
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -22,6 +22,12 @@ $breakpoint argument choises:
 1em = 16px
 */
 @mixin respond($breakepoit) {
+  @if $breakepoit == small-phone {
+    @media only screen and (max-width: 28.7em) {
+      @content
+    }
+  ; //460
+  }
   @if $breakepoit == phone {
     @media only screen and (max-width: 37.5em) {
       @content

@@ -4,6 +4,12 @@
   &__top {
     @include center;
     display: flex;
+    @include respond(phone){
+      display: none;
+    }
+    @include  respond(tab-port){
+      display: none;
+    }
     &--item {
       width: 25%;
       padding: 7rem 1rem;
@@ -79,7 +85,7 @@
         width: 49px;
         height: 34px;
         position: absolute;
-        top: 22%;
+        top: 23.8%;
         right: 22%;
         background-color: $logo-color;
         border: none;
@@ -134,6 +140,7 @@
       padding: 2rem 0;
       &-left {
         padding-left: 2rem;
+        width: 36%;
         &-link {
           text-decoration: none;
           color: $menu-color;
@@ -141,6 +148,7 @@
       }
       &-right {
         padding-right: 2rem;
+        width: 66%;
         &-list {
           text-align: right;
         }
@@ -148,6 +156,9 @@
           display: inline-flex;
           width: 7%;
           margin-right: 4px;
+          @include respond(phone){
+            width: 14%;
+          }
         }
         &-link {
         }

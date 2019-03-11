@@ -50,6 +50,8 @@
     .polosa2{
       display: -webkit-box;
       position: relative;
+      transition: all 1s ease;
+      left: 0;
     }
     &--post{
       width: 33.33%;
@@ -59,7 +61,7 @@
     }
     &--imgwrap{
       width: 100%;
-      height: 25.4rem;
+      //height: 25.4rem;
       position: relative;
       overflow: hidden;
       &::before{

@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
     //Window resize
+    //Sale slider 1200px
+
     $(window).on("resize",function () {
         var win = $(this); //this это window
-        if (win.width() <= 1999){
+        if (win.width() >= 901 && win.width() <= 1201){
             document.querySelector('.bottom-part__special-products--next').onclick = slideLeft;
             var left = 0;
             function slideLeft() {
@@ -15,17 +17,137 @@ $(document).ready(function () {
                 polosa.style.left = left + 'px';
             }
         }
-
-
-
-
-
-
-
-
+    });
+    // Sale slider 900px
+    $(window).on("resize",function () {
+        var win = $(this); //this это window
+        if (win.width() >=600 && win.width()<=901){
+            document.querySelector('.bottom-part__special-products--next').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa = document.getElementById('polosa');
+                left = left - 503.8;
+                if (left < -1007.6) {
+                    left = 0;
+                }
+                polosa.style.left = left + 'px';
+            }
+        }
+    });
+    // Sale slider 600px
+    $(window).on("resize",function () {
+        var win = $(this); //this это window
+        if (win.width() <= 600 ){
+            document.querySelector('.bottom-part__special-products--next').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa = document.getElementById('polosa');
+                left = left - 567.8;
+                if (left < -1136.6) {
+                    left = 0;
+                }
+                polosa.style.left = left + 'px';
+            }
+        }
     });
 
+    //Testimonials 1200px
+    $(window).on('resize',function () {
+        var win = $(this);
+        if (win.width() >= 901 && win.width() <= 1201){
+            document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;
+            var left = 0;
+            function slideLeft1() {
+                var polosa1 = document.getElementById('polosa1');
+                left = left - 419;
+                if (left <= -839){
+                    left = 0;
+                }
+                polosa1.style.left = left + 'px';
+            }
+        }
+    });
+    //Testimonials 900px
+    $(window).on('resize',function () {
+        var win = $(this);
+        if (win.width() >=600 && win.width()<=901){
+            document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;
+            var left = 0;
+            function slideLeft1() {
+                var polosa1 = document.getElementById('polosa1');
+                left = left - 344;
+                if (left <= -689){
+                    left = 0;
+                }
+                polosa1.style.left = left + 'px';
+            }
+        }
+    });
+    //Testimonials 600px
+    $(window).on('resize',function () {
+        var win = $(this);
+        if (win.width() <=600){
+            document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;
+            var left = 0;
+            function slideLeft1() {
+                var polosa1 = document.getElementById('polosa1');
+                left = left - 535;
+                if (left <= -1071){
+                    left = 0;
+                }
+                polosa1.style.left = left + 'px';
+            }
+        }
+    });
 
+    //News slider 1200
+    $(window).on('resize',function () {
+       var win = $(this);
+       if (win.width() >= 901 && win.width() <= 1201) {
+           document.querySelector('.section-news__btns--prev').onclick = slideLeft;
+           var left = 0;
+           function slideLeft() {
+               var polosa2 = document.getElementById('polosa2');
+               left = left - 359.95;
+               if (left <= -800){
+                   left =  0;
+               }
+               polosa2.style.left = left + 'px';
+           }
+       }
+    });
+    ////News slider 900
+    $(window).on('resize',function () {
+        var win = $(this);
+        if (win.width() >=600 && win.width()<=901) {
+            document.querySelector('.section-news__btns--prev').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa2 = document.getElementById('polosa2');
+                left = left - 299.95;
+                if (left <= -600){
+                    left =  0;
+                }
+                polosa2.style.left = left + 'px';
+            }
+        }
+    });
+    //News slider 600
+    $(window).on('resize',function () {
+        var win = $(this);
+        if (win.width() <=600 ) {
+            document.querySelector('.section-news__btns--prev').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa2 = document.getElementById('polosa2');
+                left = left - 399.95;
+                if (left <= -799.9){
+                    left =  0;
+                }
+                polosa2.style.left = left + 'px';
+            }
+        }
+    });
     $(".side-menu").hide();
     $(".search-barwrap__nav").click(function () {
         $(".side-menu").slideToggle();
@@ -210,116 +332,37 @@ $(document).ready(function () {
 
     //Testimonials
 
-
     $('.testimonials-wrap__bodywrap--bottom-itembtn').hover(function () {
         $('.testimonials-wrap__bodywrap--bottom-itembtn').removeClass("active");
         $(this).toggleClass("active");
     });
-    $('.testimonials-wrap__header--next').click(function (event) {
-        event.preventDefault();
-        $('.polosa1').animate({
-            right: right += 464,
-        });
-        if (right > 1000) {
-            $('.polosa1').stop();
-        }
-    });
-    $('.testimonials-wrap__header--prev').click(function (event) {
-        event.preventDefault();
-        $('.polosa1').animate({
-            right: right -= 464,
-        });
-        if (right < 0) {
-            $('.polosa1').stop();
-            right = 0;
-        }
-    });
-    //tab-port
-    $('.testimonials-wrap__header--next').click(function (event) {
-        event.preventDefault();
-        if (width1 = 1200) {
-            $('.polosa1').animate({
-                right: right += -50,
-            });
-        }
-        if (right > 1000) {
-            $('.polosa1').stop();
-        }
-    });
 
-    $('.testimonials-wrap__header--prev').click(function (event) {
-        event.preventDefault();
-        if (width1 = 1200) {
-            $('.polosa1').animate({
-                right: right = 0,
-            });
-
+    document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;
+    var left = 0;
+    function slideLeft1() {
+        var polosa1 = document.getElementById('polosa1');
+        left = left - 464;
+        if (left <= -929){
+            left = 0;
         }
-        if (right < 0) {
-            $('.polosa1').stop();
-            right = 0;
-        }
-    });
-
-    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(1)').click(function () {
-        $('.polosa1').animate({
-            right: 0,
-        });
-    });
-    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(2)').click(function () {
-        $('.polosa1').animate({
-            right: 464,
-        });
-    });
-    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(3)').click(function () {
-        $('.polosa1').animate({
-            right: 928,
-        });
-    });
+        polosa1.style.left = left + 'px';
+    }
 
 
     //Blog slider
-
-
-    $('.section-news__btns--prev').click(function () {
-        $('.polosa2').animate({
-            right: right += 400,
-        });
-        if (right > 800) {
-            $('.polosa2').stop();
+    function news(){
+        document.querySelector('.section-news__btns--prev').onclick = slideLeft;
+        var left = 0;
+        function slideLeft() {
+            var polosa2 = document.getElementById('polosa2');
+            left = left - 399.95;
+            if (left <= -800){
+                left =  0;
+            }
+            polosa2.style.left = left + 'px';
         }
-    });
-    $('.section-news__btns--next').click(function () {
-        $('.polosa2').animate({
-            right: right -= 400,
-        });
-        if (right < 0) {
-            $('.polosa2').stop();
-        }
-    });
-    //tab-land
-    $('.section-news__btns--prev').click(function (event) {
-        event.preventDefault();
-        if (width1 = 1200) {
-            $('.polosa2').animate({
-                right: right += -40,
-            });
-        }
-        if (right > 800) {
-            $('.polosa2').stop();
-        }
-    });
-    $('.section-news__btns--next').click(function (event) {
-        event.preventDefault();
-        $('.polosa2').animate({
-            right: right = 0,
-        });
-        if (right < 0) {
-            $('.polosa2').stop();
-        }
-    });
-
-
+    }
+    news();
     //Brand slider
     $('.brand-slider').bxSlider({
         wrapperClass: 'bx-brand',
@@ -371,14 +414,26 @@ $(document).ready(function () {
         $('.close__btn').click(function () {
             $('.header-mobilewrap__bottom').removeClass('show');
             $('.header-mobilewrap__bottom').addClass('hide');
-
-
             $('.mobile__btn').removeClass('mobile-btn');
             $('.close__btn').removeClass('mobile-btnclose');
         });
-
     });
-
+//Footer mobile
+    function mobileFut(){
+        $('.footer-mobilewrap__list--heading:eq(0)').click(function () {
+            $('.footer-mobilewrap__list1').slideToggle('slow');
+        });
+        $('.footer-mobilewrap__list--heading:eq(1)').click(function () {
+            $('.footer-mobilewrap__list2').slideToggle('slow');
+        });
+        $('.footer-mobilewrap__list--heading:eq(2)').click(function () {
+            $('.footer-mobilewrap__list3').slideToggle('slow');
+        });
+        $('.footer-mobilewrap__list--heading:eq(3)').click(function () {
+            $('.footer-mobilewrap__list4').slideToggle('slow');
+        });
+    }
+    mobileFut();
 
 
 

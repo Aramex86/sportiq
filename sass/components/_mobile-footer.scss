@@ -1,0 +1,62 @@
+.footer-mobilewrap{
+padding: 5rem 4rem;
+  display: none;
+
+  @include respond(tab-land){
+    display: none;
+  }
+  @include respond(tab-port){
+    display: block;
+  }
+
+  &__list{
+    &--item{
+
+    }
+    &--heading{
+      padding: 2rem 0;
+      position: relative;
+    }
+  }
+  &__list1{
+    display: none;
+    &--item1{
+      padding: 1.5rem 0;
+    }
+  }
+  &__list2{
+    display: none;
+    &--item2{
+      padding: 1.5rem 0;
+    }
+    &--link{
+      text-decoration: none;
+      color: $menu-color;
+      &:hover{
+        color: $logo-color;
+      }
+    }
+  }
+  &__list3{
+    display: none;
+    &--item3{
+      padding: 1.5rem 0;
+    }
+    &--link{
+      text-decoration: none;
+      color: $menu-color;
+      &:hover{
+        color: $logo-color;
+      }
+    }
+  }
+  &__list4{
+    display: none;
+    position: relative;
+    &--item4{
+      padding: 1.5rem 0;
+      color: $menu-color;
+    }
+  }
+}
+

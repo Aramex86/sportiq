@@ -52,10 +52,18 @@
   display: flex;
   padding: 0 2rem;
   justify-content: space-between;
+  @include respond(phone){
+    display: flex;
+    flex-direction: column;
+  }
 
   &__special-products {
     width: 58%;
     overflow: hidden;
+    @include respond(phone){
+      width: 100%;
+      margin-bottom: 15px;
+    }
     &--header {
       width: 100%;
       background-color: $button-color;
@@ -187,6 +195,10 @@
     font-weight: 800;
     padding-top: 8px;
     border-radius: 6px;
+    @include respond(tab-port){
+      width: 7rem;
+      font-weight: 500;
+    }
 
     & p {
       margin-top: .5rem;
@@ -197,10 +209,18 @@
     }
   }
 }
-
+#polosa1{
+  transition: all 1s ease;
+  left: 0;
+}
 .testimonials-wrap {
   width: 40%;
   overflow: hidden;
+  @include respond(phone){
+    width: 94%;
+    margin: 0 auto;
+
+  }
 
   &:hover .testimonials-wrap__bodywrap--top-img {
     outline: 3px solid $logo-color;
@@ -211,6 +231,7 @@
   .polosa1 {
     display: -webkit-box;
     position: relative;
+    transition: all 1s ease;
   }
   &__header {
     width: 100%;
@@ -263,6 +284,7 @@
     margin-top: 2.5rem;
     background-color: $features-backgroud;
     padding-bottom: 1.8rem;
+    transition: all 1s ease;
     &--top {
       text-align: center;
       margin-bottom: 3.2rem;

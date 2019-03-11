@@ -1,8 +1,15 @@
 .header-mobilewrap {
   &__top {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
+
+    @include respond(tab-land){
+      display: none;
+    }
+    @include respond(tab-port){
+      display: flex;
+    }
 
     &--btn {
       width: 20%;
@@ -11,6 +18,13 @@
     &--logo {
       width:60%;
       text-align: center;
+      &-imglogo{
+        width: 50%;
+        @include respond(small-phone){
+          width:75%;
+        }
+
+      }
     }
     &--regform {
       width: 20%;
@@ -29,6 +43,9 @@
         position: absolute;
         left: 67%;
         top: -6%;
+        @include respond(phone){
+          left: 74%;
+        }
       }
     }
   }
