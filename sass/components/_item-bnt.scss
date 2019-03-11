@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  @include respond(small-phone){
+    margin-right: 2rem;
+  }
   &--next{
     width: 2.5rem;
     height: 2rem;

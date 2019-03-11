@@ -33,6 +33,12 @@
       top: 33%;
       left: 8%;
       color: $header-background;
+      @include respond(small-phone){
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        color: $header-background;
+      }
     }
     &--item1 {
       font-size: 2rem;
@@ -86,8 +92,12 @@
       width: 79rem !important;
     }
     @include respond(small-phone){
-      width: 45rem !important;
+      width: 53rem !important;
+      background-image: linear-gradient(to right, $dark-color1 30%, transparent),
+      url("/img/slide2.jpg");
+      background-position: 340% 74%;
     }
+
   }
   &__slide3 {
     text-align: center;
@@ -116,6 +126,12 @@
       top: 33%;
       right: 12%;
       color: $header-background;
+      @include respond(small-phone){
+          position: absolute;
+          top: 55%;
+          left: 5%;
+          color: $header-background;
+      }
     }
   }
 

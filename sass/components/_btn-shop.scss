@@ -22,6 +22,9 @@
   width: 100%;
   display: flex;
   margin-top: 20px;
+  @include respond(small-phone){
+    justify-content: center;
+  }
 
   &--btn{
     border: none;

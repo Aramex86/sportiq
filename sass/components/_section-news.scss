@@ -57,6 +57,9 @@
       width: 33.33%;
       padding: 1rem;
       position: relative;
+      @include respond(small-phone){
+        width: 100%;
+      }
 
     }
     &--imgwrap{

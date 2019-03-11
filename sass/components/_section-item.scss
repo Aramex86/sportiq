@@ -6,7 +6,9 @@
 
 
   &--list {
-
+    @include respond(small-phone){
+      padding-left:1rem;
+    }
   }
   &--item {
     display: inline-block;
@@ -83,7 +85,10 @@
   &--list {
     display: inline-flex;
     justify-content: space-between;
-
+@include respond(small-phone){
+  display: block;
+  position: relative;
+}
   }
   &--sale {
     background-color: rgba(40, 42, 55, 0.9);
@@ -104,6 +109,9 @@
     display: inline-flex;
     position: relative;
     width: 24%;
+    @include respond(small-phone){
+      width: 49%;
+    }
     &:hover .item__wraptop1--eye{
       opacity: 1;
       transition: opacity .2s;
@@ -133,6 +141,11 @@
     }
     &:nth-child(5) {
      display: none;
+      @include respond(small-phone){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
     }
   }
   &--link {

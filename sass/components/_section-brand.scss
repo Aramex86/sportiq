@@ -12,6 +12,9 @@
   @include respond(phone){
     max-width: 69rem!important;
   }
+  @include respond(small-phone){
+    max-width: 33rem !important;
+  }
   &:hover .brand-next{
     display: block;
   }

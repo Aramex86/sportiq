@@ -50,6 +50,28 @@ $(document).ready(function () {
             }
         }
     });
+    // Sale slider 460px
+    $(window).on("resize",function () {
+        var win = $(this); //this это window
+        var width = $('.view-port-container').outerWidth();
+        if (win.width() <= 460 && win.width() >= 360){
+            document.querySelector('.bottom-part__special-products--next').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa = document.getElementById('polosa');
+                left = left - width -8;
+                if (left < -855) {
+                    left = 0;
+                }
+                if (left < - 657){
+                    left = 0;
+                }
+                polosa.style.left = left + 'px';
+            }
+        }
+    });
+
+
 
     //Testimonials 1200px
     $(window).on('resize',function () {
@@ -99,7 +121,23 @@ $(document).ready(function () {
             }
         }
     });
-
+    //Testimonials 459px
+    $(window).on('resize',function () {
+        var win = $(this);
+        var width = $('.testimonials-wrap__bodywrap').outerWidth();
+        if (win.width() <= 460 && win.width() >= 360){
+            document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;
+            var left = 0;
+            function slideLeft1() {
+                var polosa1 = document.getElementById('polosa1');
+                left = left - width;
+                if (left <= -803){
+                    left = 0;
+                }
+                polosa1.style.left = left + 'px';
+            }
+        }
+    });
     //News slider 1200
     $(window).on('resize',function () {
        var win = $(this);
@@ -148,6 +186,33 @@ $(document).ready(function () {
             }
         }
     });
+    //News slider 460px
+    $(window).on('resize',function () {
+        var win = $(this);
+        var width = $('.section-news__postwrap--post').outerWidth();
+        if (win.width() <= 459 && win.width() >= 360) {
+            document.querySelector('.section-news__btns--prev').onclick = slideLeft;
+            var left = 0;
+            function slideLeft() {
+                var polosa2 = document.getElementById('polosa2');
+                left = left - width ;
+               if (left <= -1837){
+                   left = 0;
+               }
+               if (left <= -1441){
+                   left = 0;
+               } 
+                polosa2.style.left = left + 'px';
+            }
+        }
+        console.log(width);
+    });
+
+
+
+
+
+
     $(".side-menu").hide();
     $(".search-barwrap__nav").click(function () {
         $(".side-menu").slideToggle();
