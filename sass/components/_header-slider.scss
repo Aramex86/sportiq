@@ -10,7 +10,7 @@
     text-align: center;
     font-size: 3.5rem;
     background-image: linear-gradient(to right, $dark-color1 30%, transparent),
-    url("/img/slide1.jpg");
+    url("../img/slide1.jpg");
     background-size: cover;
     padding: 31.5rem 0;
     z-index: -1;
@@ -75,7 +75,7 @@
     text-align: center;
     font-size: 3.5rem;
     background-image: linear-gradient(to right, $dark-color1 30%, transparent),
-    url("/img/slide2.jpg");
+    url("../img/slide2.jpg");
     background-size: cover;
     background-position: 0 74%;
     padding: 31.5rem 0;
@@ -94,7 +94,7 @@
     @include respond(small-phone){
       width: 53rem !important;
       background-image: linear-gradient(to right, $dark-color1 30%, transparent),
-      url("/img/slide2.jpg");
+      url("../img/slide2.jpg");
       background-position: 340% 74%;
     }
 
