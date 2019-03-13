@@ -862,7 +862,7 @@ body {
 .slider__slide1 {
   text-align: center;
   font-size: 3.5rem;
-  background-image: linear-gradient(to right, #343748 30%, transparent), url("/img/slide1.jpg");
+  background-image: linear-gradient(to right, #343748 30%, transparent), url("../img/slide1.jpg");
   background-size: cover;
   padding: 31.5rem 0;
   z-index: -1;
@@ -920,7 +920,7 @@ body {
 .slider__slide2 {
   text-align: center;
   font-size: 3.5rem;
-  background-image: linear-gradient(to right, #343748 30%, transparent), url("/img/slide2.jpg");
+  background-image: linear-gradient(to right, #343748 30%, transparent), url("../img/slide2.jpg");
   background-size: cover;
   background-position: 0 74%;
   padding: 31.5rem 0;
@@ -939,13 +939,13 @@ body {
   @media only screen and (max-width: 28.7em) {
     .slider__slide2 {
       width: 53rem !important;
-      background-image: linear-gradient(to right, #343748 30%, transparent), url("/img/slide2.jpg");
+      background-image: linear-gradient(to right, #343748 30%, transparent), url("../img/slide2.jpg");
       background-position: 340% 74%; } }
 
 .slider__slide3 {
   text-align: center;
   font-size: 3.5rem;
-  background-image: linear-gradient(to left, #343748 18%, transparent), url(/img/slide3.jpg);
+  background-image: linear-gradient(to left, #343748 18%, transparent), url(../img/slide3.jpg);
   background-size: cover;
   background-position: 0 37%;
   padding: 31.5rem 0;
@@ -2360,7 +2360,7 @@ body {
 
 .paralax {
   width: 100%;
-  background-image: url("/img/box.jpg");
+  background-image: url("../img/box.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
