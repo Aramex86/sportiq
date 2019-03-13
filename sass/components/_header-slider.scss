@@ -102,7 +102,8 @@
   &__slide3 {
     text-align: center;
     font-size: 3.5rem;
-    background-image: linear-gradient(to left, #343748 18%, transparent), url(/img/slide3.jpg);
+    background-image: linear-gradient(to left, #343748 18%, transparent),
+    url(../img/slide3.jpg);
     background-size: cover;
     background-position: 0 37%;
     padding: 31.5rem 0;
