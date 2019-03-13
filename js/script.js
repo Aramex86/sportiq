@@ -205,7 +205,6 @@ $(document).ready(function () {
                 polosa2.style.left = left + 'px';
             }
         }
-        console.log(width);
     });
 
 
@@ -400,6 +399,21 @@ $(document).ready(function () {
     $('.testimonials-wrap__bodywrap--bottom-itembtn').hover(function () {
         $('.testimonials-wrap__bodywrap--bottom-itembtn').removeClass("active");
         $(this).toggleClass("active");
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(1)').click(function () {
+        $('.polosa1').animate({
+            right: 0,
+        });
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(2)').click(function () {
+        $('.polosa1').animate({
+            right: 464,
+        });
+    });
+    $('.testimonials-wrap__bodywrap--bottom-item:nth-child(3)').click(function () {
+        $('.polosa1').animate({
+            right: 928,
+        });
     });
 
     document.querySelector('.testimonials-wrap__header--prev').onclick = slideLeft1;

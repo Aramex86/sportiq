@@ -5,7 +5,9 @@
   display: flex;
 
   &--list {
-
+    @include respond(small-phone){
+      padding-left:1rem;
+    }
   }
   &--item {
     display: inline-block;
@@ -13,8 +15,13 @@
     position: relative;
     color: $item-header-color1;
     cursor: pointer;
+    @include respond(tab-land){
+      padding: 0 2rem;
+      font-size: 2rem;
+    }
     @include respond(small-phone){
-      padding: 0 1rem;
+      padding: 0 2px;
+      font-size: 1.5rem;
     }
 
     &:hover {
@@ -45,6 +52,10 @@
     background-color: #fff;
     -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
+    @include respond(small-phone){
+      bottom: -103%;
+      width: 16%;
+    }
   }
   .orange {
     color: $logo-color;
@@ -72,6 +83,10 @@
       background-color: $button-color;
       padding: 1rem 0;
       display: flex;
+      @include respond(tab-land){
+        padding: 1rem 2rem;
+        font-size: 2rem;
+      }
     }
     &--headername {
       color: $item-header-color;
@@ -104,6 +119,10 @@
       -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
       clip-path: polygon(100% 0, 33% 51%, 100% 100%);
       cursor: pointer;
+      @include respond(tab-land){
+        width: 3.5rem;
+        height: 3rem;
+      }
     }
     &--next {
       width: 2rem;
@@ -113,6 +132,10 @@
       -webkit-clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
       clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
       cursor: pointer;
+      @include respond(tab-land){
+        width: 3.5rem;
+        height: 3rem;
+      }
     }
   }
 }
@@ -257,6 +280,10 @@
     background-color: $button-color;
     padding: 1rem 0;
     display: flex;
+    @include respond(tab-land){
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
     &--name {
       color: $item-header-color;
       margin-left: 2rem;
@@ -291,6 +318,10 @@
       -webkit-clip-path: polygon(100% 0, 33% 51%, 100% 100%);
       clip-path: polygon(100% 0, 33% 51%, 100% 100%);
       cursor: pointer;
+      @include respond(tab-land){
+        width: 3.5rem;
+        height: 3rem;
+      }
     }
     &--prev {
       width: 2rem;
@@ -300,6 +331,10 @@
       -webkit-clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
       clip-path: polygon(30% 2%, 100% 52%, 30% 100%);
       cursor: pointer;
+      @include respond(tab-land){
+        width: 3.5rem;
+        height: 3rem;
+      }
     }
   }
   &__bodywrap {

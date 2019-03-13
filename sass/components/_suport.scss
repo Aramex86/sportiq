@@ -2,7 +2,6 @@
   background-color: $dark-color1;
   display: flex;
   justify-content: center;
-  align-items: center;
   @include respond(phone){
     display: block;
   }
@@ -13,9 +12,6 @@
     position: relative;
     @include respond(phone){
       padding: 0;
-    }
-    &:nth-child(2){
-      padding-top: 29px;
     }
     &:not(:last-child) {
       border-right: 1px solid $header-border;

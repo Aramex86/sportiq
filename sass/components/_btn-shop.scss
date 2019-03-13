@@ -1,6 +1,13 @@
 .btn__buy{
   position: absolute;
   opacity:0;
+  @include respond(tab-land){
+    opacity: 1;
+  }
+  @include respond(small-phone){
+    position: unset;
+    margin-bottom: 20px;
+  }
   &--btn{
     border: none;
     background-color: rgba(40, 42, 55, 0.9);

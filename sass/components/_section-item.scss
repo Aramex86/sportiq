@@ -3,6 +3,18 @@
   width: 100%;
   padding: 1rem 0;
   display: flex;
+  @include respond(tab-land){
+    padding: 1.5rem 0;
+  }
+  @include respond(tab-port){
+    padding: 1.5rem 0;
+  }
+  @include respond(phone){
+    padding: 1.5rem 0;
+  }
+  @include respond(small-phone){
+    padding: 1rem 0;
+  }
 
 
   &--list {
@@ -16,8 +28,21 @@
     position: relative;
     color: $item-header-color1;
     cursor: pointer;
-    @include respond(small-phone){
+    @include respond(tab-land){
+      padding: 0 2rem;
+      font-size: 2rem;
+    }
+    @include respond(tab-port){
+      padding: 0 2rem;
+      font-size: 2rem;
+    }
+    @include respond(phone){
       padding: 0 4px;
+      font-size: 2rem;
+    }
+    @include respond(small-phone){
+      padding: 0 2px;
+      font-size: 1.5rem;
     }
     &:hover {
       color: $logo-color;
@@ -48,7 +73,10 @@
     -webkit-clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     clip-path: polygon(51% 53%, 96% 100%, 5% 100%);
     @include respond(tab-land){
-      bottom: -71%;
+      bottom: -77%;
+    }
+    @include respond(small-phone){
+      bottom: -107%;
     }
 
   }
@@ -77,6 +105,12 @@
     border-radius: 5px;
     opacity: 0;
     z-index: 1;
+    @include respond(tab-land){
+      opacity: 1;
+    }
+    @include respond(small-phone){
+      top: 26%;
+    }
     &:hover{
       background-color: $logo-color;
     }
@@ -124,20 +158,32 @@
       transform: translateY(-2.7rem);
       opacity: 0;
       transition: all 1s;
+      @include respond(tab-land){
+        transform: translateY(0);
+      }
     }
     &:hover .product-name {
       transform: translateY(-2.6rem);
       transition: all 1s;
       color: $logo-color;
+      @include respond(tab-land){
+        transform: translateY(0);
+      }
     }
     &:hover .item__wraptop1--pricewrap {
       transform: translateY(-2.6rem);
       transition: all 1s;
+      @include respond(tab-land){
+        transform: translateY(0);
+      }
     }
     &:hover .btn__buy {
       opacity: 1;
       transform: translateY(-2.3rem);
       transition: all 1s;
+      @include respond(tab-land){
+        transform: translateY(0);
+      }
     }
     &:nth-child(5) {
      display: none;
