@@ -42,7 +42,10 @@
         color: $logo-color;
         font-weight: 600;
         @include respond(tab-port){
-          font-size: 2rem;
+          font-size: 1.9rem;
+        }
+        @include respond(tab-land){
+          font-size: 1.9rem;
         }
       }
     }
@@ -51,6 +54,9 @@
       padding-right: 2.5rem;
       @include respond(tab-land){
         width: 60%;
+      }
+      @include respond(tab-port){
+        width: 58%;
       }
       &--1{
         @include respond(tab-land){
@@ -146,7 +152,10 @@
         color: $logo-color;
         font-weight: 600;
         @include respond(tab-port){
-          font-size: 2rem;
+          font-size: 1.9rem;
+        }
+        @include respond(tab-land){
+          font-size: 1.9rem;
         }
       }
     }
@@ -156,6 +165,9 @@
       transform: translateY(-9%);
       @include respond(tab-land){
         width: 60%;
+      }
+      @include respond(tab-port){
+        width: 58%;
       }
       &--2{
         width: 100%;
@@ -246,7 +258,10 @@
         color: $logo-color;
         font-weight: 600;
         @include respond(tab-port){
-          font-size: 2rem;
+          font-size: 1.9rem;
+        }
+        @include respond(tab-land){
+          font-size: 1.9rem;
         }
       }
     }
@@ -255,6 +270,9 @@
       padding-right: 2.5rem;
       @include respond(tab-land){
         width: 60%;
+      }
+      @include respond(tab-port){
+        width: 58%;
       }
       &--3{
         width: 100%;

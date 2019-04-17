@@ -9,6 +9,10 @@
     border-radius: 5px;
     z-index: 1;
     position: relative;
+    @include respond(tab-land){
+      padding: 1rem 1rem;
+      font-size: 1.5rem;
+    }
     &:hover{
       background-color: $logo-color;
     }
